@@ -1,8 +1,11 @@
 # 🤖Robótica Movil 2025-1
 
-## 🪶Autor
+## 🪶Autores
 
-Andres Camilo Torres Cajamarca - *Ingeniería Mecatrónica*
+* Andres Camilo Torres Cajamarca
+* Juan Camilo Gomez Robayo
+* Julian Gonzalez
+* Emily Villanueva
 
 ## ℹ️Descripción
 
