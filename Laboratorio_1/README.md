@@ -81,7 +81,7 @@ Para realizar la programación de la rutina mediante WIFI se le colocó el modul
 
 Se puede observar que la dirección IP es 192.168.1.227 con ello en un PC conectado a la misma red se verificó que se pudiera comunicar por medio de *ping* 
 
-![1744386153277](images/README/1744386153277.png)
+![1744386153277](images/README/ping_EV3.png)
 
 Una vez verificada la comunicación via WiFi se abrío la consola de comandos del Lego Mindstorms EV3 por medio de SHH con las siguientes credenciales
 
@@ -89,7 +89,7 @@ Una vez verificada la comunicación via WiFi se abrío la consola de comandos de
 
 > **Clave:** *Maker*
 
-![1744386168950](images/README/1744386168950.png)
+![1744386168950](images/README/ssh_EV3.png)
 
 Con ello se puede a los archivos de la SD que está en el robot y se pueden ejecutar los programas como uno que estaba de ejemplo llamado *pythonHello.py*
 
@@ -122,7 +122,7 @@ tank_drive.on_for_rotations(SpeedPercent(25), SpeedPercent(25), 10)
 
 Y se ejecuta en el robot, así:
 
-![1744386382667](images/README/1744386382667.png)
+![1744386382667](images/README/lanzar_EV3.png)
 
 El funcionamiento del codigo se ve en el siguiente video:
 
