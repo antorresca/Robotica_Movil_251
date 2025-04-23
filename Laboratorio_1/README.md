@@ -75,7 +75,9 @@ Al igual que el robot LEGO EV3, el robot Kuoki también es una plataforma robót
 
 ### Lego Mindstorms EV3
 
-#### Conexion por WIFI a Ubuntu
+#### Conexión por USB 
+
+#### Conexión por WIFI
 
 Para realizar la programación de la rutina mediante WIFI se le colocó el modulo de wifi por USB al Lego Mindstorms EV3 y se le connfiguró la red 'LabFabEx'. Al realizar dicho procedimiento la pantalla mostró al dirección IP del robot; como se ve en la siguiente figura
 
@@ -131,20 +133,20 @@ A partir de dicho codigo, se realizaron modificaciones para realizar la siguient
 ```mermaid
 flowchart TD
     A[Inicio] --> G(Activar Motores A y B <br> Sensores 2 y 4)
-    G --> E(Velocidad = 25% <br> Distancia = 0)
-    E --> B(Motor A = Velocidad <br> Motor B = Velocidad)
+    G --> W(Emitir sonido de activación <br> Color Amber en LED)
+    W --> E(Contador = 0 <br> Velocidad = 25% <br> Distancia = 0)
+    E --> B(Motor A = Velocidad <br> Motor B = Velocidad <br> Color Verde en LED)
     B --> C(Distancia = Sensor 2)
     C --> F{Distancia < 5cm}
-   
-    F -->|Sí| J(Motor A = 0 <br> Motor B = 0 <br> Giro = 0&deg)
-    J --> H(Motor A = Velocidad <br> Motor B = 0)
+    F -->|Sí| M(Contador = Contador + 1) --> J(Motor A = 0 <br> Motor B = 0 <br> Giro = 0&deg)
+    J --> H(Motor A = Velocidad <br> Motor B = 0 <br> Color Rojo en LED)
     H --> I(Giro = Sensor 4)
     I --> K{Giro > 90&deg}
     K -->|Sí| L(Motor A = 0 <br> Motor B = 0)
     K -->|No| H
-    L --> B
-
-    F -->|No| B
+    L --> N{Contador > 4} 
+    N -->|No| B
+    N -->|Sí| O[Fin]
 
 
 ```
@@ -191,3 +193,15 @@ tank_drive.turn_degrees(
 )
 
 ```
+
+Y el funcionamiento del robot se ve en el siguiente video:
+
+#### Simulacion en CoppeliaSim
+
+### Kobuki
+
+#### Manipulación via PC
+
+#### Simulación CoppeliaSim
+
+## Referencias
