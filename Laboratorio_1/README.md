@@ -79,7 +79,7 @@ Al igual que el robot LEGO EV3, el robot Kuoki también es una plataforma robót
 
 Para realizar la programación de la rutina mediante WIFI se le colocó el modulo de wifi por USB al Lego Mindstorms EV3 y se le connfiguró la red 'LabFabEx'. Al realizar dicho procedimiento la pantalla mostró al dirección IP del robot; como se ve en la siguiente figura
 
-Se puede observar que la dirección IP es 192.168.1.227 con ello en un PC conectado a la misma red se verificó que se pudiera comunicar por medio de *ping* 
+Se puede observar que la dirección IP es 192.168.1.227 con ello en un PC conectado a la misma red se verificó que se pudiera comunicar por medio de *ping*
 
 ![1744386153277](images/README/ping_EV3.png)
 
@@ -127,6 +127,27 @@ Y se ejecuta en el robot, así:
 El funcionamiento del codigo se ve en el siguiente video:
 
 A partir de dicho codigo, se realizaron modificaciones para realizar la siguiente rutina:
+
+```mermaid
+flowchart TD
+    A[Inicio] --> G(Activar Motores A y B\nSensores 2 y 4)
+    G --> E(Velocidad = 25%\nDistancia = 0)
+    E --> B(Motor A = Velocidad\nMotor B = Velocidad)
+    B --> C(Distancia = Sensor 2)
+    C --> F{Distancia < 5cm}
+   
+    F -->|Sí| J(Motor A = 0 \n Motor B = 0 \n Giro = 0&deg)
+    J --> H(Motor A = Velocidad\nMotor B = 0)
+    H --> I(Giro = Sensor 4)
+    I --> K{Giro > 90&deg}
+    K -->|Sí| L(Motor A = 0 \n Motor B = 0)
+    K -->|No| H
+    L --> B
+
+    F -->|No| B
+
+
+```
 
 Y el código final fue:
 
