@@ -137,7 +137,7 @@ A partir de dicho codigo, se realizaron modificaciones para realizar la siguient
 ```mermaid
 flowchart TD
     A[Inicio] --> G(Activar Motores A y B <br> Sensores 2 y 4)
-    G --> W(Emitir sonido de activación <br> Color Amber en LED)
+    G --> W(Emitir sonido de activación <br> Color Ambar en LED)
     W --> E(Contador = 0 <br> Velocidad = 25% <br> Distancia = 0)
     E --> B(Motor A = Velocidad <br> Motor B = Velocidad <br> Color Verde en LED)
     B --> C(Distancia = Sensor 2)
@@ -206,6 +206,8 @@ while contador < 4:
 ```
 
 Y el funcionamiento del robot se ve en el siguiente video:
+
+https://github.com/user-attachments/assets/a3ae271e-b7fb-4779-966c-295972221a82
 
 #### Simulacion en CoppeliaSim
 
