@@ -165,33 +165,40 @@ from ev3dev2.sensor.lego import UltrasonicSensor
 from ev3dev2.led import Leds
 from ev3dev2.sound import Sound
 
-#Inicio de rutina
+#Variables
+contador = 0
+velocidad = 35
 sound = Sound()
-sound.speak('Houston here i go')
-Leds().set_color("LEFT", "RED")
-Leds().set_color("RIGHT", "RED")
-sleep(2)
-Leds().set_color("LEFT", "GREEN")
-Leds().set_color("RIGHT", "GREEN")
-sleep(2)
+
+#Inicio de rutina
+sound.speak('Ahi te voy San Pedro')
+Leds().set_color("LEFT", "AMBER")
+Leds().set_color("RIGHT", "AMBER")
+sleep(0.5)
 sensor = UltrasonicSensor(INPUT_1)
 tank_drive = MoveTank(OUTPUT_B, OUTPUT_C)
-while sensor.distance_centimeters > 5: #El robot se moverá continuamente hasta encontrar un objeto a menos de 5cm
-        tank_drive.on(SpeedPercent(25), SpeedPercent(25))
-tank_drive.stop()
-
-tank_drive.stop()
 tank_drive.gyro = GyroSensor()
 
-#Calibrar el sensor de giro, tomando como posicion actual 0°
-tank_drive.gyro.calibrate()
+while contador < 4:
+    while sensor.distance_centimeters > 5: #El robot se moverá continuamente hasta encontrar un objeto a menos de 5cm
+        tank_drive.on(SpeedPercent(velocidad), SpeedPercent(velocidad))
+        Leds().set_color("LEFT", "GREEN")
+        Leds().set_color("RIGHT", "GREEN")
+    tank_drive.stop()
+    Leds().set_color("LEFT", "RED")
+    Leds().set_color("RIGHT", "RED")
 
-#Girar el robot 90° con una velocidad del 25%
-tank_drive.turn_degrees(
-    speed=SpeedPercent(25),
-    target_angle=90
-)
 
+    #Calibrar el sensor de giro, tomando como posicion actual 0°
+    tank_drive.gyro.calibrate()
+
+    #Girar el robot 90° con una velocidad definida
+    tank_drive.turn_degrees(
+        speed=SpeedPercent(20),
+        target_angle=90
+    )
+  
+    contador += 1
 ```
 
 Y el funcionamiento del robot se ve en el siguiente video:
