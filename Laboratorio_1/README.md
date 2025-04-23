@@ -130,17 +130,17 @@ A partir de dicho codigo, se realizaron modificaciones para realizar la siguient
 
 ```mermaid
 flowchart TD
-    A[Inicio] --> G(Activar Motores A y B\nSensores 2 y 4)
-    G --> E(Velocidad = 25%\nDistancia = 0)
-    E --> B(Motor A = Velocidad\nMotor B = Velocidad)
+    A[Inicio] --> G(Activar Motores A y B <br> Sensores 2 y 4)
+    G --> E(Velocidad = 25% <br> Distancia = 0)
+    E --> B(Motor A = Velocidad <br> Motor B = Velocidad)
     B --> C(Distancia = Sensor 2)
     C --> F{Distancia < 5cm}
    
-    F -->|Sí| J(Motor A = 0 \n Motor B = 0 \n Giro = 0&deg)
-    J --> H(Motor A = Velocidad\nMotor B = 0)
+    F -->|Sí| J(Motor A = 0 <br> Motor B = 0 <br> Giro = 0&deg)
+    J --> H(Motor A = Velocidad <br> Motor B = 0)
     H --> I(Giro = Sensor 4)
     I --> K{Giro > 90&deg}
-    K -->|Sí| L(Motor A = 0 \n Motor B = 0)
+    K -->|Sí| L(Motor A = 0 <br> Motor B = 0)
     K -->|No| H
     L --> B
 
