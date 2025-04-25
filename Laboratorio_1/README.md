@@ -130,6 +130,8 @@ Y se ejecuta en el robot, así:
 
 El funcionamiento del codigo se ve en el siguiente video:
 
+https://github.com/user-attachments/assets/963ccdef-cd80-4f55-87f2-be77ee3a0bb2
+
 A partir de dicho codigo, se realizaron modificaciones para realizar la siguiente rutina:
 
 ```mermaid
