@@ -209,9 +209,77 @@ Y el funcionamiento del robot se ve en el siguiente video:
 
 https://github.com/user-attachments/assets/a3ae271e-b7fb-4779-966c-295972221a82
 
-#### Simulacion en CoppeliaSim
+#### Simulacion en CoppeliaSim del robot LEGO EV3
+
+Para el presente laboratorio se simulo el comportamiento del robot Lego EV3 con Copperliasim y Matlab. la trayectoria propuesta es un cuadrado y esta se estructuro en el software matlab y se realizo la conexion con el puerto 19999 de Coppelia. Con respecto al modelo CAD utilizado, se uso el modelo desarrollado por Alberto Martin Dominguez y se configuraron los actuadores (motores) en Matlab. A continuacion se presenta el codigo desarrollado para el movimiento del robot.
+
+```matlab
+% Crear la conexión
+vrep = remApi('remoteApi');  % Cargar API
+vrep.simxFinish(-1);         % Cerrar conexiones previas
+clientID = vrep.simxStart('127.0.0.1', 19999, true, true, 5000, 5); % IP, puerto, opciones
+
+if clientID > -1
+    vrep.simxSynchronous(clientID,true);
+    vrep.simxStartSimulation(clientID,vrep.simx_opmode_oneshot_wait);
+    disp('Conexión establecida con CoppeliaSim');
+else
+    error('No se pudo establecer conexión con CoppeliaSim');
+end
+
+% Consulta el handle del objeto Lego_Ev3 en la escena Ev3Mov y lo asigna al handle Ev3_m. 
+[returnCode,Ev3_m]=vrep.simxGetObjectHandle(clientID,'lego_ev3',vrep.simx_opmode_blocking);
+% Consulta el handle de los motores (Motor_B y Motor_C) en la escena Ev3Mov y lo asigna al handle a cada uno.
+[returnCode,Motor_Der]=vrep.simxGetObjectHandle(clientID,'Motor_C',vrep.simx_opmode_blocking);
+[returnCode,Motor_Izq]=vrep.simxGetObjectHandle(clientID,'Motor_B',vrep.simx_opmode_blocking);
+
+% [returnCode]=vrep.simxSetJointTargetVelocity(clientID,Motor_Der,1,vrep.simx_opmode_oneshot);
+% [returnCode]=vrep.simxSetJointTargetVelocity(clientID,Motor_Izq,1,vrep.simx_opmode_oneshot);
+% 
+% pause(5.5)
+% 
+% vrep.simxSetJointTargetVelocity(clientID,Motor_Der,0,vrep.simx_opmode_oneshot);
+% vrep.simxSetJointTargetVelocity(clientID,Motor_Izq,0,vrep.simx_opmode_oneshot);
+
+% Parámetros
+t_adelante = 5.0;   % segundos para avanzar
+t_giro = 1.75;       % segundos para girar 90°
+vel_avance = 5.0;   % rad/s para ambos motores
+vel_giro = 5.9;     % rad/s en sentido opuesto
+
+for i = 1:4
+    % Avanza
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Izq, vel_avance, vrep.simx_opmode_oneshot);
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Der, vel_avance, vrep.simx_opmode_oneshot);
+    pause(t_adelante);
+
+    % Detener
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Izq, 0, vrep.simx_opmode_oneshot);
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Der, 0, vrep.simx_opmode_oneshot);
+    pause(0.5);
+
+    % Giro a la derecha
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Izq, -vel_giro, vrep.simx_opmode_oneshot);
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Der,  vel_giro, vrep.simx_opmode_oneshot);
+    pause(t_giro);
+
+    % Detener
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Izq, 0, vrep.simx_opmode_oneshot);
+    vrep.simxSetJointTargetVelocity(clientID, Motor_Der, 0, vrep.simx_opmode_oneshot);
+    pause(0.5);
+end
+
+disp("Recorrido cuadrado finalizado");
+
+disp('Programa terminado')
+vrep.delete(); % llama el  destructor!
+```
+El video que muestra el comportamiento se presenta a continuacion:
+
+[![Video Robot Lego EV3 ](https://drive.google.com/file/d/1zwA2eEXe5bMeKZkL_qXVDdN9SKt4bDg4/view?usp=sharing)]([https://link_del_video](https://drive.google.com/file/d/1bbhuNqI0dJUCEl0z-fd9PQtWDJ_GubL5/view?usp=sharing))
 
 ### Kobuki
+
 
 #### Manipulación via PC
 
