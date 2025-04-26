@@ -275,9 +275,7 @@ disp('Programa terminado')
 vrep.delete(); % llama el  destructor!
 ```
 El video que muestra el comportamiento se presenta a continuacion:
-
-[![Video Robot Lego EV3 ](https://drive.google.com/file/d/1zwA2eEXe5bMeKZkL_qXVDdN9SKt4bDg4/view?usp=sharing)]([https://link_del_video](https://drive.google.com/file/d/1bbhuNqI0dJUCEl0z-fd9PQtWDJ_GubL5/view?usp=sharing))
-
+https://github.com/user-attachments/assets/99786461-d128-43b0-b146-85b9d83d6fdb
 ### Kobuki
 
 
