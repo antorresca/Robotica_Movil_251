@@ -275,9 +275,14 @@ disp('Programa terminado')
 vrep.delete(); % llama el  destructor!
 ```
 El video que muestra el comportamiento se presenta a continuacion:
-https://github.com/user-attachments/assets/99786461-d128-43b0-b146-85b9d83d6fdb
-### Kobuki
 
+https://github.com/user-attachments/assets/99786461-d128-43b0-b146-85b9d83d6fdb
+
+#### Simulacion en CoppeliaSim del robot Kuboki
+
+Al igual que el robot Lego EV3, se simuló una trayectoria cuadrada para el robot kuboki, por lo que el codigo del software Matalab es el mismo que se expuso anteriormente. Por otro lado, el modelo CAD utilizado para el robot kuboki se consiguio en una plataforma libre llamada GabcadLibrary y se configuro sobre el robot "rayo" comartido por los docentes. A continuacion se muestra el video de la simulacin.
+
+https://github.com/user-attachments/assets/c7f1c4a6-c42e-4b24-a01b-a517b564cc1c
 
 #### Manipulación via PC
 
