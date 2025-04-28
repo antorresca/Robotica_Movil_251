@@ -29,10 +29,11 @@ El robot LEGO EV3 es una plataforma robótica que permite la integración de mú
 #### Sensores y Actuadores
 
 * Sensor táctil : Detecta contacto físico (presionado / liberado)
+
 <div align="center">
   <img src="images/README/SensorContacto%20EV3.jpeg" width="200px">
 </div>
-* Sensor Infrarojo : Utiliza las ondas de luz reflejadas por un objeto  
+* Sensor Infrarojo : Utiliza las ondas de luz reflejadas por un objeto
 
 <div align="center">
   <img src="images/README/SensorInfrarojo%20EV3.jpeg" width="200px">
@@ -48,11 +49,10 @@ El robot LEGO EV3 es una plataforma robótica que permite la integración de mú
 * Giroscópico : Detecta velocidad angular y orientación
 * Motor grande con una velocidad angular entre los 160-170 rpm con un torque de rotación de 20 Ncm. Este motor incluye un sensor de rotacion incorporado con resolucion de 1 grado para el control de velocidad.
 * Motor mediano con una velocidad de los 240 a 250 rpm y un torque de rotación de 8Ncm.
-  
+
 <div align="center">
   <img src="images/README/ActuadorEV3.jpeg" width="200px">
 </div>
-
 
 #### APIS
 
@@ -98,11 +98,9 @@ Al igual que el robot LEGO EV3, el robot Kuoki también es una plataforma robót
 
 ### Lego Mindstorms EV3
 
-#### Conexión por USB 
+#### Configuración por Python
 
-#### Conexión por WIFI
-
-Para realizar la programación de la rutina mediante WIFI se le colocó el modulo de wifi por USB al Lego Mindstorms EV3 y se le connfiguró la red 'LabFabEx'. Al realizar dicho procedimiento la pantalla mostró al dirección IP del robot; como se ve en la siguiente figura
+Para realizar la programación de la rutina mediante python, se realizó la configuración WIFI del robot; para ello se le colocó el modulo de wifi por USB al Lego Mindstorms EV3 y se le connfiguró la red 'LabFabEx'. Al realizar dicho procedimiento la pantalla mostró al dirección IP del robot; como se ve en la siguiente figura
 
 ![image](images/README/IP_EV3.png)
 
@@ -232,21 +230,16 @@ Y el funcionamiento del robot se ve en el siguiente video:
 
 https://github.com/user-attachments/assets/a3ae271e-b7fb-4779-966c-295972221a82
 
-Con base al diagrama de flujo se hizo otra secuencia utilizando el tipo de programación por bloques y el sensor de contacto.
-En la siguiente imangen se muestra el codigo utilizado y el video de demostración 
+#### Configuración por bloques
+
+Con base en el diagrama de flujo descrito en la sección anterior, se hizo otra secuencia utilizando el tipo de programación por bloques y se cambió el sensor de distancia por el sensor de contacto. Para la conexión con el programa *EV3 Classroom* se realizó por medio del cable USB.
+En la siguiente imangen se muestra el codigo utilizado y el video de demostración
 
 <div align="center">
   <img src="images/README/CodigoScratch.jpeg" width="250px">
 </div>
 
 https://github.com/user-attachments/assets/3dee6be2-c54d-4452-887d-88f93a166c8d
-
-### KOBUKI
-
-
-El siguiente video muestra la manipulacion del robot usando la aplicación
-
-https://github.com/user-attachments/assets/ee316dc3-965e-4750-a5a5-cc9fffb9156d
 
 #### Simulacion en CoppeliaSim del robot LEGO EV3
 
@@ -313,9 +306,18 @@ disp("Recorrido cuadrado finalizado");
 disp('Programa terminado')
 vrep.delete(); % llama el  destructor!
 ```
+
 El video que muestra el comportamiento se presenta a continuacion:
 
 https://github.com/user-attachments/assets/99786461-d128-43b0-b146-85b9d83d6fdb
+
+### KOBUKI
+
+#### Manipulación via PC
+
+El siguiente video muestra la manipulacion del robot usando la aplicación
+
+https://github.com/user-attachments/assets/ee316dc3-965e-4750-a5a5-cc9fffb9156d
 
 #### Simulacion en CoppeliaSim del robot Kuboki
 
@@ -323,8 +325,10 @@ Al igual que el robot Lego EV3, se simuló una trayectoria cuadrada para el robo
 
 https://github.com/user-attachments/assets/c7f1c4a6-c42e-4b24-a01b-a517b564cc1c
 
-#### Manipulación via PC
-
-#### Simulación CoppeliaSim
-
 ## 📖Referencias
+
+* «Python language bindings for ev3dev — python-ev3dev 2.1.0.post1 documentation». Disponible en: [https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html](https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html)
+
+### Archivos CAD
+
+* **Kobuki:** «Free CAD designs, files & 3D models | The GrabCAD Community Library». Disponible en: [https://grabcad.com/library/interbotix-turtlebot-2i-1](https://grabcad.com/library/interbotix-turtlebot-2i-1)
