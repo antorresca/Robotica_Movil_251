@@ -218,6 +218,15 @@ Y el funcionamiento del robot se ve en el siguiente video:
 
 https://github.com/user-attachments/assets/a3ae271e-b7fb-4779-966c-295972221a82
 
+Con base al diagrama de flujo se hizo otra secuencia utilizando el tipo de programación por bloques y el sensor de contacto.
+En la siguiente imangen se muestra el codigo utilizado y el video de demostración 
+
+<div align="center">
+  <img src="images/README/CodigoScratch.jpeg" width="250px">
+</div>
+
+
+
 #### Simulacion en CoppeliaSim del robot LEGO EV3
 
 Para el presente laboratorio se simulo el comportamiento del robot Lego EV3 con Copperliasim y Matlab. la trayectoria propuesta es un cuadrado y esta se estructuro en el software matlab y se realizo la conexion con el puerto 19999 de Coppelia. Con respecto al modelo CAD utilizado, se uso el modelo desarrollado por Alberto Martin Dominguez y se configuraron los actuadores (motores) en Matlab. A continuacion se presenta el codigo desarrollado para el movimiento del robot.
