@@ -25,6 +25,15 @@ El robot LEGO EV3 es una plataforma robótica que permite la integración de mú
 #### Sensores y Actuadores
 
 * Sensor táctil : Detecta contacto físico (presionado / liberado)
+<div align="center">
+  <img src="images/README/SensorContacto%20EV3.jpeg" width="200px">
+</div>
+* Sensor Infrarojo : Utiliza las ondas de luz reflejadas por un objeto  
+
+<div align="center">
+  <img src="images/README/SensorInfrarojo%20EV3.jpeg" width="200px">
+</div>
+
 * Sensor de color : Distingue colores (8 distintos), mide intensidad de luz reflejada y ambiental
 * Sensor ultrasónico : Mide distancia a objetos (de 3 cm a 250 cm)
 * Giroscópico : Detecta velocidad angular y orientación
