@@ -22,6 +22,10 @@ Estas capacidades permiten que los robots se apliquen en múltiples sectores. En
 
 El robot LEGO EV3 es una plataforma robótica que permite la integración de múltiples sensores y actuadores para programar, tareas o rutinas básicas o avanzadas, como estrategias de control, navegación autónoma hasta visión artificial si se le agregan periféricos como cámaras. Este robot tiene un sistema operático basado en Linux y cuenta con un procesador como el ARM9 de 300 MHz, adicional a esto, tiene puertos de comunicación USB, bluetooth y Wifi lo que lo vuelve versátil si se requiere el envío y la toma de datos de forma remota.
 
+<div align="center">
+  <img src="images/README/Ev3.jpeg" width="250px">
+</div>
+
 #### Sensores y Actuadores
 
 * Sensor táctil : Detecta contacto físico (presionado / liberado)
@@ -36,9 +40,19 @@ El robot LEGO EV3 es una plataforma robótica que permite la integración de mú
 
 * Sensor de color : Distingue colores (8 distintos), mide intensidad de luz reflejada y ambiental
 * Sensor ultrasónico : Mide distancia a objetos (de 3 cm a 250 cm)
+
+<div align="center">
+  <img src="images/README/SensorUltrasonico.jpeg" width="200px">
+</div>
+
 * Giroscópico : Detecta velocidad angular y orientación
 * Motor grande con una velocidad angular entre los 160-170 rpm con un torque de rotación de 20 Ncm. Este motor incluye un sensor de rotacion incorporado con resolucion de 1 grado para el control de velocidad.
 * Motor mediano con una velocidad de los 240 a 250 rpm y un torque de rotación de 8Ncm.
+  
+<div align="center">
+  <img src="images/README/ActuadorEV3.jpeg" width="200px">
+</div>
+
 
 #### APIS
 
@@ -225,7 +239,14 @@ En la siguiente imangen se muestra el codigo utilizado y el video de demostraci�
   <img src="images/README/CodigoScratch.jpeg" width="250px">
 </div>
 
+https://github.com/user-attachments/assets/3dee6be2-c54d-4452-887d-88f93a166c8d
 
+### KOBUKI
+
+
+El siguiente video muestra la manipulacion del robot usando la aplicación
+
+https://github.com/user-attachments/assets/ee316dc3-965e-4750-a5a5-cc9fffb9156d
 
 #### Simulacion en CoppeliaSim del robot LEGO EV3
 
