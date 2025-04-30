@@ -314,6 +314,33 @@ https://github.com/user-attachments/assets/99786461-d128-43b0-b146-85b9d83d6fdb
 ### KOBUKI
 
 #### Manipulación via PC
+Elementos necesarios:
+**Software**
+* Ubuntu 20.04
+* ROS Noetic
+* Paquetes ROS del robot Kobuki
+
+**Hardware**
+* Robot Kobuki
+* PC con elementos de software instalados
+* Cable de conexión USB tipo B
+
+Procedimiento:
+Una vez instalados Ubuntu y ROS se procede a la clonación del repositorio del Kobuki, se conecta el robot al PC por medio del cable USB y una vez verificada la conexión se procede con el lanzamiento de los nodos que realizan el control de velocidad de las ruedas, variando estas velocidades logramos que el robot se mueva en línea recta o haga giros a derecha o izquierda segun se desee.
+
+Primero se lanzan los nodos de operación básica del robot
+![image](https://github.com/user-attachments/assets/a3ad79ff-32cf-424f-92b6-d971922e7ded)
+
+Luego lanzamos el nodo que permite la operación por teclado
+![image](https://github.com/user-attachments/assets/2d64acbf-1e8b-4b6b-a676-20b781a5b683)
+
+Todo el procedimiento se realizó basado en la "**Guías para la interacción con la base Kobuki
+bajo el framework ROS (Guía 2 - Introduccion a la base Kobuki)**" de Santiago Daza, Pedro F. Cardenas y Ricardo Ramirez.
+
+Tambien se puede monitorear los sensores del robot mientras este está conectado como se muestra a continuación:
+
+![image](https://github.com/user-attachments/assets/31c66a12-5b6f-490b-bcb6-c0cc376c7216)
+
 
 El siguiente video muestra la manipulacion del robot usando la aplicación
 
