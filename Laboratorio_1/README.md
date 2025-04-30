@@ -328,6 +328,13 @@ Elementos necesarios:
 Procedimiento:
 Una vez instalados Ubuntu y ROS se procede a la clonación del repositorio del Kobuki, se conecta el robot al PC por medio del cable USB y una vez verificada la conexión se procede con el lanzamiento de los nodos que realizan el control de velocidad de las ruedas, variando estas velocidades logramos que el robot se mueva en línea recta o haga giros a derecha o izquierda segun se desee.
 
+Al lanzar el nodo aparece la siguiente opción:
+![image](https://github.com/user-attachments/assets/d8392dd2-76ea-47da-9bf1-d83577a8711a)
+Al activar los motores con la opción **e**, el nodo espera que ingresen los comandos de velocidad
+
+Al usar los comandos se modifican las velicidades como se muestra a continuación:
+![image](https://github.com/user-attachments/assets/d59e24a1-ab43-414f-b22c-71c32737010a)
+
 Primero se lanzan los nodos de operación básica del robot
 ![image](https://github.com/user-attachments/assets/a3ad79ff-32cf-424f-92b6-d971922e7ded)
 
