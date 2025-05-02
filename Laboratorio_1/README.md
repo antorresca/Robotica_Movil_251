@@ -330,6 +330,7 @@ Una vez instalados Ubuntu y ROS se procede a la clonación del repositorio del K
 
 Al lanzar el nodo aparece la siguiente opción:
 ![image](https://github.com/user-attachments/assets/d8392dd2-76ea-47da-9bf1-d83577a8711a)
+
 Al activar los motores con la opción **e**, el nodo espera que ingresen los comandos de velocidad
 
 Al usar los comandos se modifican las velicidades como se muestra a continuación:
