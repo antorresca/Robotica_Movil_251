@@ -363,10 +363,11 @@ https://github.com/user-attachments/assets/c7f1c4a6-c42e-4b24-a01b-a517b564cc1c
 ## 📖Referencias
 
 * «Python language bindings for ev3dev — python-ev3dev 2.1.0.post1 documentation». Disponible en: [https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html](https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html)
-* International Organization for Standardization. (2021). ISO 8373:2021 - Robots and robotic devices — Vocabulary. ISO. https://www.iso.org/standard/72703.html
-* Mataric, M. J. (2007). The robotics primer. MIT Press.
-* LEGO Education. (n.d.). LEGO® MINDSTORMS® Education EV3 Core Set. [https://education.lego.com](https://education.lego.com)
+* International Organization for Standardization, ISO 8373:2021 - Robots and robotic devices — Vocabulary, ISO, 2021. Disponible en: [https://www.iso.org/standard/72703.html](https://www.iso.org/standard/72703.html)
+* M. J. Mataric, The Robotics Primer. Cambridge, MA: MIT Press, 2007. Disponible en: [https://mitpress.mit.edu/9780262633543/the-robotics-primer/](https://mitpress.mit.edu/9780262633543/the-robotics-primer/)
+* LEGO Education, LEGO® MINDSTORMS® Education EV3 Core Set. Disponible en: [https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set-/5003400](https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set-/5003400)
 
 ### Archivos CAD
 
 * **Kobuki:** «Free CAD designs, files & 3D models | The GrabCAD Community Library». Disponible en: [https://grabcad.com/library/interbotix-turtlebot-2i-1](https://grabcad.com/library/interbotix-turtlebot-2i-1)
+* **LEGO EV3:** «Free CAD designs, files & 3D models | The GrabCAD Community Library». Disponible en: [https://grabcad.com/library/boscobot-ev3-edu-base-1](https://grabcad.com/library/boscobot-ev3-edu-base-1)
