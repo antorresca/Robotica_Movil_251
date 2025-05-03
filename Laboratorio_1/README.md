@@ -363,8 +363,8 @@ https://github.com/user-attachments/assets/c7f1c4a6-c42e-4b24-a01b-a517b564cc1c
 ## 📖Referencias
 
 * «Python language bindings for ev3dev — python-ev3dev 2.1.0.post1 documentation». Disponible en: [https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html](https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html)
-* International Organization for Standardization, ISO 8373:2021 - Robots and robotic devices — Vocabulary, ISO, 2021. Disponible en: [https://www.iso.org/standard/72703.html](https://www.iso.org/standard/72703.html)
-* M. J. Mataric, The Robotics Primer. Cambridge, MA: MIT Press, 2007. Disponible en: [https://mitpress.mit.edu/9780262633543/the-robotics-primer/](https://mitpress.mit.edu/9780262633543/the-robotics-primer/)
+* International Organization for Standardization, ISO 8373:2021 - Robots and robotic devices — Vocabulary, ISO, 2021. Disponible en: [https://cdn.standards.iteh.ai/samples/75539/1bc8409322eb4922bf680e15901852d2/ISO-8373-2021.pdf](https://cdn.standards.iteh.ai/samples/75539/1bc8409322eb4922bf680e15901852d2/ISO-8373-2021.pdf)
+* M. J. Mataric, The Robotics Primer. Cambridge, MA: MIT Press, 2007. Disponible en: [https://pages.ucsd.edu/~ehutchins/cogs8/mataric-primer.pdf](https://pages.ucsd.edu/~ehutchins/cogs8/mataric-primer.pdf)
 * LEGO Education, LEGO® MINDSTORMS® Education EV3 Core Set. Disponible en: [https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set-/5003400](https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set-/5003400)
 
 ### Archivos CAD
