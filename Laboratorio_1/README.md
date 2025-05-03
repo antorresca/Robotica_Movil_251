@@ -363,6 +363,9 @@ https://github.com/user-attachments/assets/c7f1c4a6-c42e-4b24-a01b-a517b564cc1c
 ## 📖Referencias
 
 * «Python language bindings for ev3dev — python-ev3dev 2.1.0.post1 documentation». Disponible en: [https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html](https://ev3dev-lang.readthedocs.io/projects/python-ev3dev/en/stable/index.html)
+* International Organization for Standardization. (2021). ISO 8373:2021 - Robots and robotic devices — Vocabulary. ISO. https://www.iso.org/standard/72703.html
+* Mataric, M. J. (2007). The robotics primer. MIT Press.
+* LEGO Education. (n.d.). LEGO® MINDSTORMS® Education EV3 Core Set. [https://education.lego.com](https://education.lego.com)
 
 ### Archivos CAD
 
