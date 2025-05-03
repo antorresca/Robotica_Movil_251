@@ -4,8 +4,8 @@
 
 * Andres Camilo Torres Cajamarca
 * Juan Camilo Gomez Robayo
-* Julian Gonzalez
-* Emily Villanueva
+* Julian Andres Gonzalez Reina
+* Emily Angelica Villanueva Serna
 
 ## ℹ️Descripción
 
