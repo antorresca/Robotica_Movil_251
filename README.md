@@ -6,6 +6,7 @@
 * Juan Camilo Gomez Robayo
 * Julian Andres Gonzalez Reina
 * Emily Angelica Villanueva Serna
+* Elvin Andres Corredor Torres
 
 ## ℹ️Descripción
 
