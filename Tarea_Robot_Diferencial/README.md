@@ -32,7 +32,7 @@ $$ \omega = 0 \text{rad/s} $$
 
 #### Datos Reales con MATLAB
 
-Para la trayectoria recta se le asignó la velocidad del 20% a los motores derecho e izquierdo; y con el programa descrito en el archivo [TomaDeDatos.m](scripts/TomaDeDatos.m) se obtuvo la siguiente gráfica que describe la posición angular de cada una de las ruedas mientras el robot está en movimiento
+Para la trayectoria recta se le asignó la velocidad del 20% a los motores derecho e izquierdo; y con el programa descrito en el archivo [TomaDeDatos.mlx](scripts/TomaDeDatos.mlx) se obtuvo la siguiente gráfica que describe la posición angular de cada una de las ruedas mientras el robot está en movimiento
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/6411f9c7-7d30-48d5-9515-2808b80c6be7" width="500">
@@ -97,7 +97,7 @@ sin(\theta) & cos(\theta) & 0 & y \\
  0 & 0 & 0 & 1 \\
 \end{bmatrix}$$
 
-ya con esto, se empleó el script [DatosTracker.m](scripts/DatosTracker.m) y se obtuvo
+ya con esto, se empleó el script [TomaDeDatos](scripts/TomaDeDatos.mlx) y se obtuvo
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/74be3c3e-588c-4820-81ba-00884b592c84" width="500">
@@ -140,7 +140,7 @@ $$ \omega = -0.1690 \text{rad/s} $$
 
 #### Datos con MATLAB
 
-Para la trayectoria recta se le asignó la velocidad del 20% al motor izquierdo y 15% al derecho; y con el programa descrito en el archivo [TomaDeDatos.m](scripts/TomaDeDatos.m) se obtuvo la siguiente gráfica que describe la posición angular de cada una de las ruedas mientras el robot está en movimiento
+Para la trayectoria recta se le asignó la velocidad del 20% al motor izquierdo y 15% al derecho; y con el programa descrito en el archivo [TomaDeDatos.mlx](scripts/TomaDeDatos.mlx) se obtuvo la siguiente gráfica que describe la posición angular de cada una de las ruedas mientras el robot está en movimiento
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/7d74e99b-f784-4f0d-aa44-f06bf39d3cc1" width="500">
@@ -216,3 +216,6 @@ Se calcularon los promedios en cada uno y se calculó el error relativo con resp
 * Las herramientas como *MATLAB* y *Tracker* permiten comprender y visualizar el movimiento de los robots moviles durante el tiempo.
 * A pesar del postprocesado que se le realice a los datos que se obtengan en pruebas experimentales, es podible que aun asi halla errores relativos altos en los resultados esto debido a que si se filtran demasiado los datos se pierde información y si no se filtran correctamente, el ruido de medición genera mayores errores.
 
+## Notas adicionales
+
+En la carpeta [Scripts](scripts) estan los diferentes archivos *.mat* de los datos obtenidos y empleados. Y en la carpeta [Tracker](tracker) estan los archivos *.trk* empleados
