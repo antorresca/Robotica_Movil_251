@@ -44,3 +44,12 @@ El sistema operativo robótico (ROS) se define como un framework diseñado para 
   * rosservice-> Llama o inspecciona servicios. Ej.: rosservice list/call
   * rosmsg-> Visualiza estructuras de mensajes. Ej.: rosmsg show
   * rospack-> Busca información sobre paquetes. Ej.: rospack find <paquete>
+
+### 4.2. 👀🫲🏼👂🏼🤖🧠 Sensores
+
+####4.2.1. 🔦👀🌐🔭 Sensor HOKUYO
+
+Para el desarrollo de estas practica se realizo el procedimiento establecido en el repositorio de GithUb, el cual indicaba que se debia verificar la funcionalidad del sensor Hokuyo por medio del software URG Benri data viewing tool. A continuacion se muestra la toma de datos realizada por el sensor con el software.
+
+![Imagen Software URG Benri data viewing tool](LAB2SOFTWARE.jpg)
+![Ubicacion del sensor](LAB2SOFTWARE1.jpg)
