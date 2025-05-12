@@ -44,6 +44,23 @@ El sistema operativo robótico (ROS) se define como un framework diseñado para 
   * rosservice-> Llama o inspecciona servicios. Ej.: rosservice list/call
   * rosmsg-> Visualiza estructuras de mensajes. Ej.: rosmsg show
   * rospack-> Busca información sobre paquetes. Ej.: rospack find <paquete>
+ 7. Investigue acerca del robot TurtleBot2 y su relación con la base Kobuki.
+  * TurttleBot2 es un kit de robot de bajo costo con software de codigo abierto cuya esturctura  esta conformado por la base robotica movil Kobuki que cuenta con sensores de deteccion de obstaculos, sensores de odometria y sensores de inclinacion, ademas proporciona energia al sistema esterno , sensores externos , actuadores y otros componentes.
+
+8. ¿Para que sirve los sensores cliff en el Kobuki?
+ * Los sensores Cliff en español sensores de precipicio tienen como funcion detectar desniveles o bordes en el suelo , como escaleras para evitar que el robot caiga . En sensor detecta un cambio de nivel , inmediatamente detiene cualquir moviemiento del robot , es un comando que tiene prioridad.
+   
+9. ¿Como leer un evento de dicho sensor?
+ * Cuando el sensor detecta un desnivel , inmediatamente genera un evento , es necesario suscribirse al topico /mobile_base/events/cliff , el cual publica mensajes de tipo kobuki_msgs/CliffEvent , el mensaje tiene los siguientes campos
+ * sensor : 0: izquierdo , 1: centro, 2: derecho
+ * estado : 0: piso , 1: precipicio
+ * bottom : valor analogico de la señal infraroja 
+   
+10. ¿Qué protocolo de comunicación usa el Lego Ev3 con sus sensores y actuadores?
+ *
+11. ¿Qué opciones de conexión permiten integrar sensores no nativos al sistema LEGO EV3?
+ *
+ 
 
 ### 4.2. 👀🫲🏼👂🏼🤖🧠 Sensores
 
