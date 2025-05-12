@@ -51,4 +51,4 @@ El sistema operativo robótico (ROS) se define como un framework diseñado para 
 
 Para el desarrollo de estas practica se realizo el procedimiento establecido en el repositorio de GithUb, el cual indicaba que se debia verificar la funcionalidad del sensor Hokuyo por medio del software URG Benri data viewing tool. A continuacion se muestra la toma de datos realizada por el sensor con el software.
 
-![Imagen Software URG Benri data viewing tool](HOKUYO.jpg)
+![Imagen Software URG Benri data viewing tool](HOKUYO.png)
