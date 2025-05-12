@@ -1,10 +1,15 @@
 # 🤖Laboratorio 2: Introducción al uso de sensores y ROS
 
-## 🏁Objetivos
+## 1. 🏁Objetivos
 
-## 4. 🔧➡️🚀 Procedimiento
+* Familiarizarse con el uso e implementación de sensores.
+* Comprender los principios de funcionamiento de diferentes tipos de sensores, así como sus implicaciones en sistemas de adquisición de datos.
+* Evaluar la incertidumbre asociada a las mediciones obtenidas mediante sensores, aplicando métodos estadísticos básicos.
+* Realizar el manejo de las plataformas robóticas disponibles a través del uso de ROS (Robot Operating System).
 
-### 4.1. 🔍📚 Búsqueda bibliográfica
+## 2. 🔧➡️🚀 Procedimiento
+
+### 2.1. 🔍📚 Búsqueda bibliográfica
 
 1. ¿Qué es el Vocabulario Internacional de Metrología (VIM)?
 El Vocabulario Internacional de Metrología es una norma internacional que proporciona definiciones normalizadas para los conceptos fundamentales utilizados en metrología. Su objetivo es unificar el lenguaje técnico en medición para facilitar la comunicación en contextos científicos y en entornos industriales.
@@ -57,15 +62,48 @@ El sistema operativo robótico (ROS) se define como un framework diseñado para 
  * bottom : valor analogico de la señal infraroja 
    
 10. ¿Qué protocolo de comunicación usa el Lego Ev3 con sus sensores y actuadores?
- *
-11. ¿Qué opciones de conexión permiten integrar sensores no nativos al sistema LEGO EV3?
- *
+ * El LEGO EV3 utiliza principalmente el protocolo I²C para comunicarse con sus sensores inteligentes conectados a los puertos 1-4, lo que permite el intercambio digital de datos como distancia, color o rotación. Algunos sensores también pueden usar UART o señales analógicas según el diseño. En cuanto a los actuadores (motores conectados a los puertos A-D), el EV3 emplea señales de PWM para controlar la potencia y dirección, junto con retroalimentación de encoders para medir posición y velocidad. Este sistema de comunicación es propietario y está optimizado para facilitar la conexión automática y segura de módulos LEGO.
  
+11. ¿Qué opciones de conexión permiten integrar sensores no nativos al sistema LEGO EV3?
+ * El sistema LEGO EV3 permite integrar sensores no nativos mediante los puertos de sensor utilizando protocolos estándar como I²C o UART, siempre que el sensor respete el voltaje y la estructura del conector. También es posible usar el pin de identificación analógica para que el EV3 reconozca el dispositivo. Otra opción es conectar sensores a través de una Raspberry Pi o una placa Arduino, comunicándose con el EV3 por Bluetooth, Wi-Fi o USB, lo que amplía las posibilidades mediante sistemas como ev3dev o entornos de programación como Python o C++.
 
-### 4.2. 👀🫲🏼👂🏼🤖🧠 Sensores
 
-####4.2.1. 🔦👀🌐🔭 Sensor HOKUYO
+### 3. 👀🫲🏼👂🏼🤖🧠 Sensores
+
+#### 3.1. 🔦👀🌐🔭 Sensor HOKUYO
 
 Para el desarrollo de estas practica se realizo el procedimiento establecido en el repositorio de GithUb, el cual indicaba que se debia verificar la funcionalidad del sensor Hokuyo por medio del software URG Benri data viewing tool. A continuacion se muestra la toma de datos realizada por el sensor con el software.
 
-![Imagen Software URG Benri data viewing tool](HOKUYO.png)
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/c4d54b46-7593-4061-b2c1-aef02fe4acfa" width="500">
+</div>
+
+**_Imagenes eliminadas del Git_**
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/1ac198f6-fe5f-41db-b90c-d9b99e36f4ca" width="500">
+</div>
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/bc186dc2-8676-4bc3-a3b3-21192eae27e8" width="500">
+</div>
+
+#### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
+
+#### 3.3. 🔊📡📏 Sensor de ultrasonido
+
+#### 3.4. 📡🧭🧱 Sensores Lego
+
+### 4. 🌐🤖 ROS
+
+#### 4.1. 🗂️🌐🤖 Uso de ROS
+
+#### 4.2. 🌐🐢🤖 ROS Kuboki
+
+#### 4.3. 🌐🧱🤖 ROS Lego EV3
+
+# 5. 🪶 Referencias
+
+* V. Mazzari, «I2C communication: Lego Mindstorms NXT brick, sonar sensor and a Saleae logic analyser», Génération Robots - Blog, 23 de febrero de 2023. Disponible en: https://www.generationrobots.com/blog/en/i2c-communication-lego-mindstorms-nxt-brick-sonar-sensor-and-a-saleae-logic-analyser/?srsltid=AfmBOoof5rZjMT62RZPMTAu3v9xz6ochArpMappM3TvVxX7Lxs3yxEUz
+* ev3dev.org, «Input / Output Ports — ev3dev-jessie Linux kernel drivers 19 documentation». Disponible en: https://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-jessie/ports.html
+
