@@ -11,7 +11,7 @@ v \\
 \end{bmatrix} = \begin{bmatrix} 
 \frac{r}{2} & \frac{r}{2} \\ 
 0 & 0 \\ 
-\frac{r}{2l}&  \frac{r}{2l}\\ 
+\frac{r}{2l}&  -\frac{r}{2l}\\ 
 \end{bmatrix} \cdot \begin{bmatrix} 
 \dot{\phi_1} \\ 
 \dot{\phi_2} \end{bmatrix} $$
