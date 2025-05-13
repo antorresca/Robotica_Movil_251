@@ -102,6 +102,32 @@ Linea recta
  <img src="https://github.com/user-attachments/assets/9830f6f9-716a-446e-810a-72182d5f6d13" width="300">
 </div>
 
+Para calcular la distancia recorrida se tiene en cuenta que
+
+$$ P = 2 \cdot \pi \cdot r$$
+
+donde $P$ es el perimeto de la rueda, es decir la distancia que recorre al girar 1 vuelta completa y $r = 0.028 \text{m}$ que es el radio de la rueda. 
+
+$$ P = 2 \cdot \pi \cdot 0.028 = 0.1759 \text{m}$$
+
+Ahora, para hallar la distancia teniendo en cuenta los grados se tiene que 
+
+
+$$ d = m_{grados} \cdot \frac{P}{360^{o}} $$
+
+y con los datos obtenidos se tiene que 
+
+$$ d_1 =  2071^{o} \cdot \frac{0.1759}{360^{o}} = 1.0121 \text{m}$$
+$$ d_2 =  2075^{o} \cdot \frac{0.1759}{360^{o}} = 1.0140 \text{m}$$
+
+obteniendo un promedio de $d_{prom} = 1.0131 \text{m}$ dando un error relativo de $1.31$%
+
+Por el lado del sensor ultrasonico, se tiene que
+
+$$ d_u = d_f - d_i = 105.2 - 4.6 =  100.6 \text{cm} = 1.006 \text{m}$$
+
+con ello, se tiene un error relativo de $0.6$%
+
 Giro a 45°
 
 <div align="center">
