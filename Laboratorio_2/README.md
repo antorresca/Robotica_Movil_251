@@ -88,7 +88,47 @@ Utilizando la funcion de LidaScan se grafica las paredes detectadas por el senso
 
 #### 3.3. 🔊📡📏 Sensor de ultrasonido
 
+Montaje experimental
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/4be9b597-d38b-4d2d-a486-7953dbcfe118" width="500">
+</div>
+
 #### 3.4. 📡🧭🧱 Sensores Lego
+
+Linea recta
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/9830f6f9-716a-446e-810a-72182d5f6d13" width="300">
+</div>
+
+Giro a 45°
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/9471c45d-02b1-4586-a6d7-2382bdb3b5f2" width="500">
+</div>
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/a5ad13de-9812-4054-8a0e-a745d811cd5b" width="500">
+</div>
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/24cf07aa-058f-4ef9-89a9-768a26ac0c67" width="500">
+</div>
+
+Giro a 30°
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/b395da9e-3d44-4cf7-b66b-2967115405f2" width="500">
+</div>
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/ae7503ab-74ea-4126-be53-9197a5d9df7e" width="500">
+</div>
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/742c50b9-3d66-4ab7-92c9-2271ca9f441c" width="500">
+</div>
 
 ### 4. 🌐🤖 ROS
 
