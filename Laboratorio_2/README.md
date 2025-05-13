@@ -78,15 +78,6 @@ Para el desarrollo de estas practica se realizo el procedimiento establecido en 
  <img src="https://github.com/user-attachments/assets/c4d54b46-7593-4061-b2c1-aef02fe4acfa" width="500">
 </div>
 
-**_Imagenes eliminadas del Git_**
-
-<div align="center">
- <img src="https://github.com/user-attachments/assets/1ac198f6-fe5f-41db-b90c-d9b99e36f4ca" width="500">
-</div>
-
-<div align="center">
- <img src="https://github.com/user-attachments/assets/bc186dc2-8676-4bc3-a3b3-21192eae27e8" width="500">
-</div>
 
 #### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
 
