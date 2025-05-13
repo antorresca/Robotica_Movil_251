@@ -74,9 +74,14 @@ El sistema operativo robótico (ROS) se define como un framework diseñado para 
 
 Para el desarrollo de estas practica se realizo el procedimiento establecido en el repositorio de GithUb, el cual indicaba que se debia verificar la funcionalidad del sensor Hokuyo por medio del software URG Benri data viewing tool. A continuacion se muestra la toma de datos realizada por el sensor con el software.
 
+####Pose 1
 <div align="center">
  <img src="https://github.com/user-attachments/assets/c4d54b46-7593-4061-b2c1-aef02fe4acfa" width="500">
 </div>
+
+
+Utilizando la funcion de LidaScan se grafica las paredes detectadas por el sensor en un scanedo de 682 grados. Por otro lado, estos mismos datos son utilizados para graficar el mapa de ocupacion que se puede ver en escala de grises.
+
 
 
 #### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
