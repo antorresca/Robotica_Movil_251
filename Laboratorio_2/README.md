@@ -86,7 +86,13 @@ Utilizando la funcion de LidaScan se grafica las paredes detectadas por el senso
 
 #### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
 
-El sensor RPLidar es un sensor el cual utiliza luz laser para medir distancia a objetos , para esta practica se hace una adquisicion de datos utilizando los algoritmos de python puestos a nuestra disposcion en el GitHub de la clase , colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas . 
+El sensor RPLidar es un sensor el cual utiliza luz laser para medir distancia a objetos , para esta practica se hace una adquisicion de datos utilizando los algoritmos de python puestos a nuestra disposcion en el GitHub de la clase , colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas .
+Se toma el siguiente marco de referncia fijo para poder colocar las poses respecto a esa referencia 
+#### Marco de referencia fijo
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/43a26d2e-3a24-4882-80e3-9d5122867280" width="500">
+</div>
 
 #### Pose 1
 
