@@ -74,7 +74,7 @@ El sistema operativo robótico (ROS) se define como un framework diseñado para 
 
 Para el desarrollo de estas practica se realizo el procedimiento establecido en el repositorio de GithUb, el cual indicaba que se debia verificar la funcionalidad del sensor Hokuyo por medio del software URG Benri data viewing tool. A continuacion se muestra la toma de datos realizada por el sensor con el software.
 
-####Pose 1
+#### Pose 1
 <div align="center">
  <img src="https://github.com/user-attachments/assets/c4d54b46-7593-4061-b2c1-aef02fe4acfa" width="500">
 </div>
@@ -85,6 +85,30 @@ Utilizando la funcion de LidaScan se grafica las paredes detectadas por el senso
 
 
 #### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
+
+El sensor RPLidar es un sensor el cual utiliza luz laser para medir distancia a objetos , para esta practica se hace una adquisicion de datos utilizando los algoritmos de python puestos a nuestra disposcion en el GitHub de la clase , colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas . 
+
+#### Pose 1
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/8eaa874a-1182-4444-9f86-2eb09c5760fe" width="500">
+</div>
+
+
+#### Pose 2
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/6c5acfdc-84ff-4cc0-8d2a-e59a2ad37467" width="500">
+</div>
+
+#### Pose 3
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/0e242a55-cd3e-45f3-b855-80be6060244a" width="500">
+</div>
+
+
+
 
 #### 3.3. 🔊📡📏 Sensor de ultrasonido
 
