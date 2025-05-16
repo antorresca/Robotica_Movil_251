@@ -94,24 +94,44 @@ Se toma el siguiente marco de referncia fijo para poder colocar las poses respec
  <img src="https://github.com/user-attachments/assets/43a26d2e-3a24-4882-80e3-9d5122867280" width="500">
 </div>
 
-#### Pose 1
+#### Pose 1 [0.62, 0.54, 3/2*pi]
 
 <div align="center">
  <img src="https://github.com/user-attachments/assets/8eaa874a-1182-4444-9f86-2eb09c5760fe" width="500">
 </div>
 
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/df3c0cd2-cb6f-4426-b64c-e9b083a1fecd" width="500">
+</div>
 
-#### Pose 2
+
+
+#### Pose 2 [0.17, 0.32, pi/2]
 
 <div align="center">
  <img src="https://github.com/user-attachments/assets/6c5acfdc-84ff-4cc0-8d2a-e59a2ad37467" width="500">
 </div>
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/eea8bc5a-10bd-4615-b488-291aafc57e23" width="500">
+</div>
 
-#### Pose 3
+
+
+#### Pose 3 [0.21, 0.42, pi]
 
 <div align="center">
  <img src="https://github.com/user-attachments/assets/0e242a55-cd3e-45f3-b855-80be6060244a" width="500">
 </div>
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/f3d3e328-ac05-407e-bce0-fb0ea6f50011" width="500">
+</div>
+
+#### Mapa de Ocupacion Completo 
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/3b11bcbf-7fd5-40fd-8043-7999582f1c95" width="500">
+</div>
+
 
 
 
