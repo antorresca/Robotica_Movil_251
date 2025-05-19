@@ -186,22 +186,22 @@ Montaje experimental
 </div>
 
 En la siguiente imagen se muestran las graficas de las mediciones para 100 cm, obteniendo una distancia media de 95.6020 cm, una desviación estandar de 7.6605 
-<img src="https://github.com/user-attachments/assets/105a107f-73ef-490d-9e65-1f58bb94430f">
+<img src="https://github.com/user-attachments/assets/105a107f-73ef-490d-9e65-1f58bb94430f" width="500">
 
 A continuación se muestran las graficas de error absoluto y error medio en cada punto
-<img src="https://github.com/user-attachments/assets/28945dae-524b-40a9-9423-0e9a31b0d904">
+<img src="https://github.com/user-attachments/assets/28945dae-524b-40a9-9423-0e9a31b0d904" width="500">
 
 En la siguiente imagen se muestran las graficas de las mediciones para 160 cm, obteniendo una distancia media de 156.2359 cm, una desviación estandar de 0.0195 
-<img src="https://github.com/user-attachments/assets/d78e7134-1ffc-4125-8e01-252676e8fbd8">
+<img src="https://github.com/user-attachments/assets/d78e7134-1ffc-4125-8e01-252676e8fbd8" width="500">
 
 A continuación se muestran las graficas de error absoluto y error medio en cada punto
-<img src="https://github.com/user-attachments/assets/b855aea3-e403-492c-b116-e5de533fdb95">
+<img src="https://github.com/user-attachments/assets/b855aea3-e403-492c-b116-e5de533fdb95" width="500">
 
 En la siguiente imagen se muestran las graficas de las mediciones para 160 cm, obteniendo una distancia media de 206.0456 cm, una desviación estandar de 0.1886 
-<img src="https://github.com/user-attachments/assets/731d4e62-dc45-449e-8dce-71fc4229acb3">
+<img src="https://github.com/user-attachments/assets/731d4e62-dc45-449e-8dce-71fc4229acb3" width="500">
 
 A continuación se muestran las graficas de error absoluto y error medio en cada punto
-<img src="https://github.com/user-attachments/assets/4408eef4-8d43-4fae-b63b-68e482f81bb6">
+<img src="https://github.com/user-attachments/assets/4408eef4-8d43-4fae-b63b-68e482f81bb6" width="500">
 
 
 
