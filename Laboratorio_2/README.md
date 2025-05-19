@@ -205,7 +205,11 @@ En la siguiente imagen se muestran las graficas de las mediciones para 160 cm, o
 A continuación se muestran las graficas de error absoluto y error medio en cada punto
 <img src="https://github.com/user-attachments/assets/4408eef4-8d43-4fae-b63b-68e482f81bb6" width="900">
 
-
+**Análisis de resultados**
+Como se aprecia en las gráficas, en la medida que se incrementó la distancia de medición la desviación estandar disminuyó, es decir la precisión mejoró con la distancía.
+En las gráficas se presentan los mejores resultados, sin embargo, se pudo deducir que el sensor es muy susceptible al ruido y perturbaciones.
+En la toma de medidas para una distancia de 100 cm, aparecieron longitudes que diferían en más de un 50% del valor real.
+La diferencia de la sdistancia media con respecto a la distancia real se mantuvo entre los 4 y 5 cm independientemente de la longitud medida, lo cual nos permite pensar que el sensor mantiene la precición más sin embargo no es confiable con una sola medida, es necesario tener un conjunto de medidas para hacer una buena aproximación al valor real, resaltando que los valores medidos siempre estuvieron por debajo del valor real de distancia.
 
 
 #### 3.4. 📡🧭🧱 Sensores Lego
