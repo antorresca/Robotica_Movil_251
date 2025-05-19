@@ -180,13 +180,31 @@ Montaje experimental
 
 #### 3.4. 📡🧭🧱 Sensores Lego
 
-Linea recta
+##### 3.4.1 ↕️Linea recta
+
+Para el procedimiento con los sensores Lego, empleando el mindstorms ev3, en primer lugar se construyó el siguiente programa en la Aplicación oficial _EV3 Classroom_ para lograr que el robot se moviera en linea recta.
+
+
+Este programa, hacia que el robot se moviera en linea recta hasta detectar un objeto a menos de 5 _cm_. Como se puede observar en el siguiente video,
+
+https://github.com/user-attachments/assets/b67dd712-e816-46e9-8b19-d63a51c41d35
+
+Ahora bien, para poder lograr que recorriera aproximadamente 1 metro se tuvo en cuenta que el objeto que iba a lograr que se deteniera estuviera a 105 cm (1.05 m) del extremo del robot. Al finalizar el recorrido, el robot mostraba la distancia inicial y la distancia final medida por el sensor ultrasonido y los grados medidos por cada una de las ruedas considerando 0 cuando empieza el recorrido. Al emplear dicho programa se obtuvo:
 
 <div align="center">
  <img src="https://github.com/user-attachments/assets/9830f6f9-716a-446e-810a-72182d5f6d13" width="300">
 </div>
 
-Para calcular la distancia recorrida se tiene en cuenta que
+Es decir,
+
+|Dato|Unidad|Descripción|
+|----|------|-----------|
+|105.2|cm|Distancia inicial del sensor ultrasonico hasta el objeto|
+|4.6|cm|Distancia final del sensor ultrasonico hasta el objeto|
+|2071|°|Grados del encoder recorridos por rueda derecha|
+|2075|°|Grados del encoder recorridos por rueda izquierda|
+
+A apartir de dichos datos, se calculó la distancia recorrida, primero con los datos de cada rueda, para ello, se tiene en cuenta que
 
 $$ P = 2 \cdot \pi \cdot r$$
 
@@ -195,7 +213,6 @@ donde $P$ es el perimeto de la rueda, es decir la distancia que recorre al girar
 $$ P = 2 \cdot \pi \cdot 0.028 = 0.1759 \text{m}$$
 
 Ahora, para hallar la distancia teniendo en cuenta los grados se tiene que 
-
 
 $$ d = m_{grados} \cdot \frac{P}{360^{o}} $$
 
@@ -206,40 +223,56 @@ $$ d_2 =  2075^{o} \cdot \frac{0.1759}{360^{o}} = 1.0140 \text{m}$$
 
 obteniendo un promedio de $d_{prom} = 1.0131 \text{m}$ dando un error relativo de $1.31$%
 
-Por el lado del sensor ultrasonico, se tiene que
+Por el lado, para ver el funcionamiento del sensor ultrasonico, se tiene que
 
 $$ d_u = d_f - d_i = 105.2 - 4.6 =  100.6 \text{cm} = 1.006 \text{m}$$
 
-con ello, se tiene un error relativo de $0.6$%
+con ello, se tiene un error relativo de $0.6$%. Colocando los datos en una tabla tenemos que,
 
-Giro a 45°
+|Sensor|Medida obtenida (cm)|Error relativo (%)|
+|------|---------------|--------------|
+|Ultrasónico|100.6| 0.6 |
+|Encoder Rueda| 101.31 | 1.31 |
 
-<div align="center">
- <img src="https://github.com/user-attachments/assets/9471c45d-02b1-4586-a6d7-2382bdb3b5f2" width="500">
+Con ello se puede decir que el sensor ultrasonico tiene una mayor exactitud que el sensor del encoder de la rueda.
+
+##### 3.4.2 🔄️ Giro en rueda
+
+Para este procedimiento, de igual manera que en la sección [3.4.1 ↕️Linea recta](#341-%EF%B8%8Flinea-recta) se crearon los programas [Giro_30.lmsp](Archivos_EV3/Giro_30.lmsp) y [Giro_45.lmsp](Archivos_EV3/Giro_45.lmsp) en la aplicación _EV3 Classroom_, el codigo en bloques de uno de esos programas se puede ver en la siguiente imagen
+
+En este programa, el robot gira el Motor conectado al puerto _B_ 30° cada 15 segundos, tiempo suficiente para tomar la medida con un instrumento externo, en este caso con un goniometro, dicho proceimiento se realizó 3 veces, como se observa en las siguientes fotos:
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+ <img src="https://github.com/user-attachments/assets/5025361f-e480-42ad-8605-d7d3ace4c2b6" width="300">
+ <img src="https://github.com/user-attachments/assets/48754ffe-e9a8-4ee2-8f3e-2cdbb0262e4f" width="300">
+ <img src="https://github.com/user-attachments/assets/c7c5fcee-bea7-4113-b4d5-6f5e4b085461" width="300">
 </div>
 
-<div align="center">
- <img src="https://github.com/user-attachments/assets/a5ad13de-9812-4054-8a0e-a745d811cd5b" width="500">
+Para mejor comprensión, se colocaron los valores en la siguiente tabla
+
+|No. Prueba|Angulo Encoder (°) |Distancia Goniometro (°) |Error relativo (%)|
+|------|------|------|------|
+|1|30|29|3.45|
+|2|60|59|1.69|
+|3|90|89|1.12|
+
+Dandonos un error en promedio de $2.08$%
+
+De igual forma se hizo el giro de 45° dando,
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+ <img src="https://github.com/user-attachments/assets/33599d53-40d4-43ab-9ae0-55a553c23071" width="300">
+ <img src="https://github.com/user-attachments/assets/ef313110-2b36-49d5-aea2-9cb68aa63ecd" width="300">
+ <img src="https://github.com/user-attachments/assets/c0801508-86c0-4aee-a1d2-3aafa61df9a0" width="300">
 </div>
 
-<div align="center">
- <img src="https://github.com/user-attachments/assets/24cf07aa-058f-4ef9-89a9-768a26ac0c67" width="500">
-</div>
+|No. Prueba|Angulo Encoder (°) |Distancia Goniometro (°) |Error relativo (%)|
+|------|------|------|------|
+|1|45|45|0|
+|2|90|89|1.12|
+|3|135|44(Angulo interno)|0.74|
 
-Giro a 30°
-
-<div align="center">
- <img src="https://github.com/user-attachments/assets/b395da9e-3d44-4cf7-b66b-2967115405f2" width="500">
-</div>
-
-<div align="center">
- <img src="https://github.com/user-attachments/assets/ae7503ab-74ea-4126-be53-9197a5d9df7e" width="500">
-</div>
-
-<div align="center">
- <img src="https://github.com/user-attachments/assets/742c50b9-3d66-4ab7-92c9-2271ca9f441c" width="500">
-</div>
-
+Y con estos datos nos dio un error en promedio de $0.62$%
 ### 4. 🌐🤖 ROS
 
 #### 4.1. 🗂️🌐🤖 Uso de ROS
