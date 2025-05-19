@@ -74,16 +74,43 @@ El sistema operativo robótico (ROS) se define como un framework diseñado para 
 
 Para el desarrollo de estas practica se realizo el procedimiento establecido en el repositorio de GithUb, el cual indicaba que se debia verificar la funcionalidad del sensor Hokuyo por medio del software URG Benri data viewing tool. A continuacion se muestra la toma de datos realizada por el sensor con el software.
 
-#### Pose 1
-<div align="center">
- <img src="https://github.com/user-attachments/assets/c4d54b46-7593-4061-b2c1-aef02fe4acfa" width="500">
-</div>
-
-
 Utilizando la funcion de LidaScan se grafica las paredes detectadas por el sensor en un scanedo de 682 grados. Por otro lado, estos mismos datos son utilizados para graficar el mapa de ocupacion que se puede ver en escala de grises.
 
+#### Pose 1 sensor HOKUYO
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/9324871e-517c-43a6-b707-a7720c09e8ec" width="900">
+</div>
 
+#### Pose 2 sensor HOKUYO
 
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/a7ebd92e-e2ea-43be-8e75-cca82f4736bf" width="900">
+</div>
+
+#### Pose 2 sensor HOKUYO
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/1044d498-1c7e-4ebf-88f0-10853d04d28e" width="900">
+</div>
+
+Finalmente, se realiza el mapa de ocupacion completo, obtenido de cada una de las poses detallando asi el espacio en el que se encuentra el sensor.
+
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/383d0009-3352-4955-ac84-bebabc73669f" width="600">
+</div>
+
+Errores identificados
+
+* Ruido de baja densidad. En la unión de escaneos, hay puntos sueltos o ruido que no pertenece a ninguna superficie clara. Esto esta causado por:
+  * Reflexiones en paredes no perfectamente mates.
+  * Interferencia con fuentes de luz.
+  * Valores atípicos (outliers) no filtrados del LIDAR.
+  * Vibración o inestabilidad del sensor durante el escaneo
+
+* Zonas con datos faltantes. El mapa presenta sectores oscuros o sin datos (zonas negras), especialmente hacia los extremos del ángulo de visión. Esto se debe a:
+  * Objetos fuera del rango de escaneo, ya que el sensor no detenta en rangos de -120 - 120 grados.
+  * Ruido o lecturas nulas del sensor que fueron descartadas.
+    
 #### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
 
 El sensor RPLidar es un sensor el cual utiliza luz laser para medir distancia a objetos , para esta practica se hace una adquisicion de datos utilizando los algoritmos de python puestos a nuestra disposcion en el GitHub de la clase , colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas .
