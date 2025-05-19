@@ -187,7 +187,9 @@ Para el procedimiento con los sensores Lego, empleando el mindstorms ev3, en pri
 
 Este programa, hacia que el robot se moviera en linea recta hasta detectar un objeto a menos de 5 _cm_. Como se puede observar en el siguiente video,
 
-https://github.com/user-attachments/assets/b67dd712-e816-46e9-8b19-d63a51c41d35
+
+https://github.com/user-attachments/assets/ee291814-7428-4ab5-ab27-86ec813b11f5
+
 
 Ahora bien, para poder lograr que recorriera aproximadamente 1 metro se tuvo en cuenta que el objeto que iba a lograr que se deteniera estuviera a 105 cm (1.05 m) del extremo del robot. Al finalizar el recorrido, el robot mostraba la distancia inicial y la distancia final medida por el sensor ultrasonido y los grados medidos por cada una de las ruedas considerando 0 cuando empieza el recorrido. Al emplear dicho programa se obtuvo:
 
