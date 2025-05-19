@@ -180,7 +180,9 @@ Errores identificados
 
 #### 3.3. 🔊📡📏 Sensor de ultrasonido
 
-Montaje experimental
+De acuerdo a las instrucciones se realzó el montaje experimental para comprobar la presición del sensor de ultrasonido HC-SR04, se realiza la toma de muestras a 1m, 1,6m y 2,1m. Para cada distancia se realiza la toma de 100 muestras y se calcula el error absoluto, el error relativo, la distancia media y la desviación estandar. 
+
+Montaje experimental realizado
 <div align="center">
  <img src="https://github.com/user-attachments/assets/4be9b597-d38b-4d2d-a486-7953dbcfe118" width="900">
 </div>
