@@ -216,7 +216,7 @@ La diferencia de la sdistancia media con respecto a la distancia real se mantuvo
 
 ##### 3.4.1 ↕️Linea recta
 
-Para el procedimiento con los sensores Lego, empleando el mindstorms ev3, en primer lugar se construyó el siguiente programa en la Aplicación oficial _EV3 Classroom_ para lograr que el robot se moviera en linea recta.
+Para el procedimiento con los sensores Lego, empleando el mindstorms ev3, en primer lugar se construyó el siguiente programa [Linea_Recta.mlsp](Archivos_EV3/Linea_Recta.mlsp) en la Aplicación oficial _EV3 Classroom_ para lograr que el robot se moviera en linea recta.
 
 <div align="center">
  <img src="https://github.com/user-attachments/assets/167502a5-a23f-4c67-873c-1f5d7fda11cd" width="300">
