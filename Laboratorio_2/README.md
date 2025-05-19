@@ -242,6 +242,10 @@ Con ello se puede decir que el sensor ultrasonico tiene una mayor exactitud que 
 
 Para este procedimiento, de igual manera que en la sección [3.4.1 ↕️Linea recta](#341-%EF%B8%8Flinea-recta) se crearon los programas [Giro_30.lmsp](Archivos_EV3/Giro_30.lmsp) y [Giro_45.lmsp](Archivos_EV3/Giro_45.lmsp) en la aplicación _EV3 Classroom_, el codigo en bloques de uno de esos programas se puede ver en la siguiente imagen
 
+<div align="center">
+ <img src="https://github.com/user-attachments/assets/16576a92-f2c8-4f55-9fad-aec63b695279" width="300">
+</div>
+
 En este programa, el robot gira el Motor conectado al puerto _B_ 30° cada 15 segundos, tiempo suficiente para tomar la medida con un instrumento externo, en este caso con un goniometro, dicho proceimiento se realizó 3 veces, como se observa en las siguientes fotos:
 
 <div style="display: flex; justify-content: center; gap: 10px;">
