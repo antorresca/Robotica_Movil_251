@@ -113,9 +113,13 @@ Errores identificados
     
 #### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
 
-El sensor RPLidar es un sensor el cual utiliza luz laser para medir distancia a objetos , para esta practica se hace una adquisicion de datos utilizando los algoritmos de python puestos a nuestra disposcion en el GitHub de la clase , colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas .
-Se toma el siguiente marco de referncia fijo para poder colocar las poses respecto a esa referencia 
+El sensor RPLidar es un sensor el cual utiliza luz láser para medir distancia a objetos, para esta práctica se hace una adquisición de datos utilizando los algoritmos de python puestos a nuestra disposición en el GitHub de la clase , colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas .
+
+Se utiliza el comando LidarScan de matlab para graficar los datos obtenidos y el comando insertRay para graficar las paredes detectadas por el sensor y simular el láser del sensor. Finalmente se utiliza el comando buildMap para recrear el espacio completo donde se tomaron los datos. 
+Se toma el siguiente marco de referencia fijo para poder colocar las poses, todas las poses están en Metros y radianes  
+
 #### Marco de referencia fijo
+
 
 <div align="center">
  <img src="https://github.com/user-attachments/assets/43a26d2e-3a24-4882-80e3-9d5122867280" width="500">
@@ -167,6 +171,10 @@ Se toma el siguiente marco de referncia fijo para poder colocar las poses respec
  <img src="https://github.com/user-attachments/assets/3b11bcbf-7fd5-40fd-8043-7999582f1c95" width="500">
 </div>
 
+Errores identificados
+* Rangos de Medición
+  * El rango de medición de este sensor es de 0.15 metros a 12 metros en algunos casos del experimento el cable de envío de datos quedo muy cerca al sensor, debido a esto en algunas ubicaciones no se pudieron adquirir datos.
+  * Al estar en rotación constante la vibración del sensor afecta con la adquisición de datos
 
 
 
