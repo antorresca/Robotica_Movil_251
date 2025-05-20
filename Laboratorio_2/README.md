@@ -113,9 +113,9 @@ Errores identificados
     
 #### 3.2. 🔦👀🌍📡 Sensor RPLIDAR
 
-El sensor RPLidar es un sensor el cual utiliza luz láser para medir distancia a objetos, para esta práctica se hace una adquisición de datos utilizando los algoritmos de python puestos a nuestra disposición en el GitHub de la clase , colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas .
+El sensor RPLidar es un sensor el cual utiliza luz láser para medir distancia a objetos, para esta práctica se hace una adquisición de datos utilizando los algoritmos de python puestos a nuestra disposición en el GitHub de la clase [lidar.py](archivos_matlab/lidar.py), colocando el sensor en tres poses diferentes con el fin de recrear con algoritmos de matlab el laberinto utilizado para las pruebas .
 
-Se utiliza el comando LidarScan de matlab para graficar los datos obtenidos y el comando insertRay para graficar las paredes detectadas por el sensor y simular el láser del sensor. Finalmente se utiliza el comando buildMap para recrear el espacio completo donde se tomaron los datos. 
+Se utiliza el comando LidarScan de matlab para graficar los datos obtenidos y el comando insertRay para graficar las paredes detectadas por el sensor y simular el láser del sensor [Codigo_LidarScan_BuildMap.m](archivos_matlab/Codigo_LidarScan_BuildMap.m). Finalmente se utiliza el comando buildMap para recrear el espacio completo donde se tomaron los datos. 
 Se toma el siguiente marco de referencia fijo para poder colocar las poses, todas las poses están en Metros y radianes  
 
 #### Marco de referencia fijo
