@@ -1,5 +1,13 @@
 # 🤖Laboratorio 2: Introducción al uso de sensores y ROS
 
+## 🪶Autores
+
+* Andres Camilo Torres Cajamarca
+* Juan Camilo Gomez Robayo
+* Julian Andres Gonzalez Reina
+* Emily Angelica Villanueva Serna
+* Elvin Andres Corredor Torres
+
 ## 1. 🏁Objetivos
 
 * Familiarizarse con el uso e implementación de sensores.
@@ -188,22 +196,34 @@ Montaje experimental realizado
 </div>
 
 En la siguiente imagen se muestran las graficas de las mediciones para 100 cm, obteniendo una distancia media de 95.6020 cm, una desviación estandar de 7.6605 
+<div align="center">
 <img src="https://github.com/user-attachments/assets/105a107f-73ef-490d-9e65-1f58bb94430f" width="900">
+</div>
 
 A continuación se muestran las graficas de error absoluto y error medio en cada punto
+<div align="center">
 <img src="https://github.com/user-attachments/assets/28945dae-524b-40a9-9423-0e9a31b0d904" width="900">
+</div>
 
 En la siguiente imagen se muestran las graficas de las mediciones para 160 cm, obteniendo una distancia media de 156.2359 cm, una desviación estandar de 0.0195 
+<div align="center">
 <img src="https://github.com/user-attachments/assets/d78e7134-1ffc-4125-8e01-252676e8fbd8" width="900">
+</div>
 
 A continuación se muestran las graficas de error absoluto y error medio en cada punto
+<div align="center">
 <img src="https://github.com/user-attachments/assets/b855aea3-e403-492c-b116-e5de533fdb95" width="900">
+</div>
 
 En la siguiente imagen se muestran las graficas de las mediciones para 160 cm, obteniendo una distancia media de 206.0456 cm, una desviación estandar de 0.1886 
+<div align="center">
 <img src="https://github.com/user-attachments/assets/731d4e62-dc45-449e-8dce-71fc4229acb3" width="900">
+</div>
 
 A continuación se muestran las graficas de error absoluto y error medio en cada punto
+<div align="center">
 <img src="https://github.com/user-attachments/assets/4408eef4-8d43-4fae-b63b-68e482f81bb6" width="900">
+</div>
 
 **Análisis de resultados**
 Como se aprecia en las gráficas, en la medida que se incrementó la distancia de medición la desviación estandar disminuyó, es decir la precisión mejoró con la distancía.
