@@ -339,9 +339,25 @@ Y con estos datos nos dio un error en promedio de $0.62$%
 ### 4. 🌐🤖 ROS
 
 #### 4.1. 🗂️🌐🤖 Uso de ROS
-<div style="display: flex; justify-content: center; gap: 10px;">
-![image](https://github.com/user-attachments/assets/3d2187a8-6a3b-4637-b41d-8cd2f7bd8033)
+
+
+
+
+
+<div style="display: flex; justify-content: center; gap: 10px;"  align="center">
+  <img src="https://github.com/user-attachments/assets/920aa521-c4bf-4183-a66f-12564db9823a" width="500" title="pysubposepy">
 </div>
+Publicaion de Pose con pysubposepy
+
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+ <img src="https://github.com/user-attachments/assets/db4d8e2c-0ff0-45ff-aedd-42f41f58e203" width="500"  title="pypubvel">
+</div>
+Trayectoria Aleatoria de Turtlesim con pypubvel
+
+
+Posiones publicada usando 
+
+
 
 #### 4.2. 🌐🐢🤖 ROS Kuboki
 
