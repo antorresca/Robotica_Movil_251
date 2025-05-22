@@ -339,6 +339,9 @@ Y con estos datos nos dio un error en promedio de $0.62$%
 ### 4. 🌐🤖 ROS
 
 #### 4.1. 🗂️🌐🤖 Uso de ROS
+<div style="display: flex; justify-content: center; gap: 10px;">
+![image](https://github.com/user-attachments/assets/3d2187a8-6a3b-4637-b41d-8cd2f7bd8033)
+</div>
 
 #### 4.2. 🌐🐢🤖 ROS Kuboki
 
