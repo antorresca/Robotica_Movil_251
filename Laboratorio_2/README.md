@@ -8,6 +8,15 @@
 * Emily Angelica Villanueva Serna
 * Elvin Andres Corredor Torres
 
+## Indice de Entregas
+
+[Entrega 1](#entrega-1)
+
+[Entrega 2](#entrega-2)
+
+---
+# ENTREGA 1
+
 ## 1. 🏁Objetivos
 
 * Familiarizarse con el uso e implementación de sensores.
@@ -336,12 +345,13 @@ De igual forma se hizo el giro de 45° dando,
 |3|135|44(Angulo interno)|0.74|
 
 Y con estos datos nos dio un error en promedio de $0.62$%
+
+---
+## ENTREGA 2
+
 ### 4. 🌐🤖 ROS
 
 #### 4.1. 🗂️🌐🤖 Uso de ROS
-
-
-
 
 
 <div style="display: flex; justify-content: center; gap: 10px;"  align="center">
@@ -362,6 +372,19 @@ Posiones publicada usando
 #### 4.2. 🌐🐢🤖 ROS Kuboki
 
 #### 4.3. 🌐🧱🤖 ROS Lego EV3
+
+1.1. Lectura de sensores
+
+
+
+1.2. GUI teleoperacion
+
+
+
+2. Rutina
+
+
+
 
 # 5. 🪶 Referencias
 
