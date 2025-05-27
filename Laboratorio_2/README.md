@@ -352,7 +352,15 @@ Y con estos datos nos dio un error en promedio de $0.62$%
 ### 4. 🌐🤖 ROS
 
 #### 4.1. 🗂️🌐🤖 Uso de ROS
+Haciendo uso de los dos archivos de python suminsitrados, se procedera a explicar que realiza cada codigo desglosado.
 
+pysubpose.py
+
+Inicialmente el programa llama la librería de rospy y también llama a Pose.
+A continuación, define una función “poseMessageReceived” que devuelve un “message” en pantalla cada vez que lo obtiene, el cual es la posición X, Y y la Dirección θ del robot. 
+Inicia un nodo ROS llamado “pysubpose” y se suscribe al tópico “turtle1/pose”  y cada vez que se publica la Pose, va a llamar la función “poseMessageReceived”.
+Con la función rospy.spin() mantiene el programa escuchando al topico, a la espera de mensajes.
+Finalmente, con el except maneja una excepción en caso de que se oprima ctrl+c para cerrar el programa.
 
 <div style="display: flex; justify-content: center; gap: 10px;"  align="center">
   <img src="https://github.com/user-attachments/assets/920aa521-c4bf-4183-a66f-12564db9823a" width="500" title="pysubposepy">
