@@ -356,26 +356,31 @@ Haciendo uso de los dos archivos de python suminsitrados, se procedera a explica
 
 pysubpose.py
 
-Inicialmente el programa llama la librería de rospy y también llama a Pose.
+Inicialmente le dice al sistema operativo el tipo de interprete que debe usar, en este caso debe usar Python 3.
+Luego el programa llama la librería de rospy y también llama a Pose.
 A continuación, define una función “poseMessageReceived” que devuelve un “message” en pantalla cada vez que lo obtiene, el cual es la posición X, Y y la Dirección θ del robot. 
-Inicia un nodo ROS llamado “pysubpose” y se suscribe al tópico “turtle1/pose”  y cada vez que se publica la Pose, va a llamar la función “poseMessageReceived”.
-Con la función rospy.spin() mantiene el programa escuchando al topico, a la espera de mensajes.
+Inicia un nodo ROS llamado “pysubpose” y se suscribe al tópico “turtle1/pose” y cada vez que se publica la Pose, va a llamar la función “poseMessageReceived”.
+Con la función rospy.spin() mantiene el programa escuchando al tópico, a la espera de mensajes.
 Finalmente, con el except maneja una excepción en caso de que se oprima ctrl+c para cerrar el programa.
+
 
 <div style="display: flex; justify-content: center; gap: 10px;"  align="center">
   <img src="https://github.com/user-attachments/assets/920aa521-c4bf-4183-a66f-12564db9823a" width="500" title="pysubposepy">
 </div>
 Publicaion de Pose con pysubposepy
 
+Igual que el programa anterior en su primera línea le dice al sistema operativo el tipo de interprete que debe usar, en este caso debe usar Python 3.
+Importa rospy para manejar ROS, twist para manejar la velocidad y random para dar valores aleatorios.
+Luego crea un  publicador en el tópico “turtle1/cmd_vel” el cual envía mensajes del tipo Twist y a continuación se inicia un nodo llamado “pypubvel”.
+También crea una variable de tasa “rate” la cual enviará valores cada 0,5 segundos.
+El bucle While se mantendrá operativo mientras ROS esté activo, dentro de este bucle se crea un mensaje Twist, se asigna valores aleatorios a “msg.linear.x” en el rango [0 - 1] y también a “msg.angular.z” con la fórmula 2*random() – 1 en el rango [-1 - 1].
+Luego publica el mensaje y espera hasta el siguiente ciclo.
+Finalmente, con el except maneja una excepción en caso de que se oprima ctrl+c para cerrar el programa.
+
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
  <img src="https://github.com/user-attachments/assets/db4d8e2c-0ff0-45ff-aedd-42f41f58e203" width="500"  title="pypubvel">
 </div>
 Trayectoria Aleatoria de Turtlesim con pypubvel
-
-
-Posiones publicada usando 
-
-
 
 #### 4.2. 🌐🐢🤖 ROS Kuboki
 
