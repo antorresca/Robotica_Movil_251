@@ -443,7 +443,10 @@ Cabe resaltar que el nodo se creó dentro del nodo principal **kobuki_node**, se
 
 A continuación se presenta un video del funcionamiento del programa realizado 
 
-https://github.com/user-attachments/assets/1ffbfc6b-595a-4826-a535-f70a97c71333
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/1ffbfc6b-595a-4826-a535-f70a97c71333" />
+</div>
+
 
 
 #### 4.3. 🌐🧱🤖 ROS Lego EV3
