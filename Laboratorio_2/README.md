@@ -441,6 +441,10 @@ A continuacón se resalta la línea de código incluida
 
 Cabe resaltar que el nodo se creó dentro del nodo principal **kobuki_node**, se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
 
+A continuación se presenta un video del funcionamiento de programa realizado 
+
+
+
 #### 4.3. 🌐🧱🤖 ROS Lego EV3
 
 1.1. Lectura de sensores
