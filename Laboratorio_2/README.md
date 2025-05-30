@@ -427,7 +427,7 @@ Además del script es necesario modificar el archivo CMakeLists.txt como se resa
 ```python
 install(PROGRAMS scripts/getOdom2D.py
                  scripts/getYaw.py
-                 scripts/clifh.py
+                 ***scripts/clifh.py***
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 ```
@@ -436,7 +436,7 @@ También es necesario modificar el archivo **launch** para que al ejecutarlo lan
 A continuacón se resalta la línea de código incluida
 
 ```python
-**<node pkg="kobuki_node" type="clifh.py" name="clifh" output="screen"/>**
+<node pkg="kobuki_node" type="clifh.py" name="clifh" output="screen"/>
 ```
 
 Cabe resaltar que el nodo se creó dentro del nodo principal **kobuki_node**, se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
