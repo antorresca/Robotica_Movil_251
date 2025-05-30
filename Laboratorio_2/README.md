@@ -383,6 +383,56 @@ Finalmente, con el except maneja una excepción en caso de que se oprima ctrl+c 
 Trayectoria Aleatoria de Turtlesim con pypubvel
 
 #### 4.2. 🌐🐢🤖 ROS Kuboki
+Desarrolle un programa que permita realizar la lectura del sensor de acantilado (cliff) del robot Kobuki y reproduzca un sonido al detectarse un evento asociado a dicho sensor. De forma simultánea, habilite el modo de teleoperación mediante teclado para controlar el movimiento del robot.
+Usando las librerías propias del robot Kobuki, las cuales fueron instaladas en la carpeta **Kobuki_ws**, dentro del la carpeta Kobuki_nodes, se crea un nuevo nodo llamado **clif.py** que realiza lo siguiente:
+1. Declara la variable de sonido que va a reproducir cuando aparezca un evento en el sensor de la rueda "Cliff" y la publica en un tópico
+2. Crea el subscriptor para monitorear los eventos que genere el topico **/mobile_base/events/cliff**
+3. Crea el publicador que enviará al tópico **/mobile_base/commands/sound** el tipo de sonido que va a reproducir el robot cuando detecte un cambio en el sensor de la rueda
+
+A continuación se pressenta el código elaborado
+#!/usr/bin/env python
+
+import rospy
+from kobuki_msgs.msg import CliffEvent, Sound
+
+def cliff_callback(msg):
+    # Verifica el tipo de sensor que detectó el evento
+    rospy.loginfo(f"Cliff event detected from sensor: {msg.sensor}")
+    
+    
+    # Publica un sonido en el tópico /mobile_base/commands/sound
+    sound_msg = Sound()
+    sound_msg.value = 5
+    sound_pub.publish(sound_msg)
+    rospy.loginfo("Published sound command with value: 5")
+    
+if __name__ == '__main__':
+    rospy.init_node('clifh', anonymous=True)
+
+    # Publicador para el tópico /mobile_base/commands/sound
+    sound_pub = rospy.Publisher('/mobile_base/commands/sound', Sound, queue_size=10)
+
+    rospy.loginfo("Cliff event handler node started.")
+
+    # Suscribirse al tópico /mobile_base/events/cliff
+    rospy.Subscriber('/mobile_base/events/cliff', CliffEvent, cliff_callback)
+    rospy.spin()
+    # Inicializa el publicador para el tópico /mobile_base/commands/sound
+    
+Además del script es necesario modificar el archivo CMakeLists.txt como se resalta a continuación:
+
+install(PROGRAMS scripts/getOdom2D.py
+                 scripts/getYaw.py
+                 scripts/clifh.py
+        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
+También es necesario modificar el archivo **launch** para que al ejecutarlo lance el nodo escrito que envía el mensaje de alerta. 
+A continuacón se resalta la línea de código incluida
+
+**<node pkg="kobuki_node" type="clifh.py" name="clifh" output="screen"/>**
+
+Cabe resaltar que el nodo se creó dentro del nodo principal **kobuki_node**, se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
 
 #### 4.3. 🌐🧱🤖 ROS Lego EV3
 
