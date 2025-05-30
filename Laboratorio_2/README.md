@@ -389,7 +389,9 @@ Usando las librerías propias del robot Kobuki, las cuales fueron instaladas en 
 2. Crea el subscriptor para monitorear los eventos que genere el topico **/mobile_base/events/cliff**
 3. Crea el publicador que enviará al tópico **/mobile_base/commands/sound** el tipo de sonido que va a reproducir el robot cuando detecte un cambio en el sensor de la rueda
 
-A continuación se pressenta el código elaborado
+A continuación se pressenta el código elaborado:
+
+```python
 #!/usr/bin/env python
 
 import rospy
@@ -426,11 +428,14 @@ install(PROGRAMS scripts/getOdom2D.py
                  scripts/clifh.py
         DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
+```
 
 También es necesario modificar el archivo **launch** para que al ejecutarlo lance el nodo escrito que envía el mensaje de alerta. 
 A continuacón se resalta la línea de código incluida
 
+```python
 **<node pkg="kobuki_node" type="clifh.py" name="clifh" output="screen"/>**
+```
 
 Cabe resaltar que el nodo se creó dentro del nodo principal **kobuki_node**, se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
 
