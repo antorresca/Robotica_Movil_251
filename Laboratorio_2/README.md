@@ -420,9 +420,11 @@ if __name__ == '__main__':
     rospy.Subscriber('/mobile_base/events/cliff', CliffEvent, cliff_callback)
     rospy.spin()
     # Inicializa el publicador para el tópico /mobile_base/commands/sound
+```
     
 Además del script es necesario modificar el archivo CMakeLists.txt como se resalta a continuación:
 
+```python
 install(PROGRAMS scripts/getOdom2D.py
                  scripts/getYaw.py
                  scripts/clifh.py
