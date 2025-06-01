@@ -451,16 +451,75 @@ A continuación se presenta un video del funcionamiento del programa realizado
 
 #### 4.3. 🌐🧱🤖 ROS Lego EV3
 
+Para utilizar ROS con el robot Lego Mindstorms EV3, no es posible ejecutarlo directamente en el dispositivo, ya que este no cumple con los requisitos mínimos de hardware necesarios para correr ROS. Por esta razón, se recurre a técnicas que permiten conectar el EV3 a un sistema ROS que se ejecuta en un PC.
+
+Una de estas técnicas consiste en establecer una comunicación mediante sockets a través de un programa en Python. Este programa permite configurar el robot como un sistema de entrada/salida (I/O), lo que posibilita la lectura de sensores y el envío de comandos a los actuadores a través de la red.
+
+En paralelo, un nodo de ROS en el PC se comunica por red con el EV3 para llevar a cabo el control del robot. El programa desarrollado para este fin fue [NOMBRE_DEL_PROGRAMA], el cual, al ejecutarse en el EV3, muestra la siguiente salida:
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/a2554114-3f0b-4fa3-87aa-85f3e3dff94e" />
+</div>
+
+Una vez establecida la conexión de red con el robot, es posible proceder con los siguientes puntos del laboratorio.
+
 1.1. Lectura de sensores
+
+Una vez establecida la comunicación con el robot, se realizaron las modificaciones correspondientes al programa [NOMBRE_DEL_PROGRAMA_EN_EV3]. Paralelamente, se desarrolló un nodo de ROS en Python denominado [NOMBRE_DEL_NODO].
+
+En términos generales, el EV3 envía periódicamente (cada X segundos) los datos obtenidos por sus sensores a través de la red. El nodo de ROS recibe esta información mediante un socket, y posteriormente la publica en el tópico [NOMBRE_DEL_TÓPICO].
+
+El funcionamiento de este sistema puede observarse en el siguiente video:
+
 
 
 
 1.2. GUI teleoperacion
 
+Para la teleoperación del EV3, se utilizaron el programa [NOMBRE_DEL_PROGRAMA_EN_EV3] y el nodo de ROS [NOMBRE_DEL_NODO_EN_PC]. Con estos programas, se implementaron las siguientes funcionalidades mediante el uso del teclado, controlando los motores del robot a un X % de su velocidad máxima:
+
+* *W* avanzar
+* *S* retroceder
+* *A* giro a la izquierda
+* *D* giro a la derecha
+* *Q* detenerse
+
+Una vez implementado el sistema, su funcionamiento puede observarse en el siguiente video:
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/9b275ff9-4d78-4021-bb49-469876914db3" />
+</div>
 
 
 2. Rutina
 
+Para generar la rutina se siguió el siguiente diagrama de flujo
+
+```mermaid
+graph TD
+    A[Inicio] --> B(Distancia = 0<br>Velocidad = 20%<br>Toque = 'No') --> C(Moverse hacia adelante)
+    C --> D(Distancia = Sensor ultrasónico)
+    D --> E{¿Distancia < 5 cm?}
+    E -- Sí --> F(Detenerse)
+    E -- No --> C
+    F --> G(Girar 90° en sentido antihorario)
+    G --> H(Retroceder)
+    H --> I(Toque = Sensor de toque)
+    I --> J{¿Toque = 'Sí'?}
+    J -- Sí --> K(Detenerse)
+    J -- No --> H
+    K --> L(Moverse hacia adelante durante 1 segundo)
+    L --> M[Fin]
+```
+
+Para la implementación, se utilizaron dos nodos de ROS:
+
+* *XXX*: Nodo encargado de la comunicación con el robot. Se encarga de leer los datos de los sensores y enviar comandos a los actuadores a través de la red.
+* *WWW*: Nodo de control de movimiento. Este nodo procesa los datos publicados en el tópico YYY y, según las condiciones del diagrama de flujo, publica comandos de control en el tópico ZZZ.
+
+Adicionalmente, se empleó un script en Python ([NOMBRE_DEL_SCRIPT]) ejecutado directamente en el EV3. Este programa se encarga de enviar los datos de los sensores y ejecutar las órdenes recibidas para controlar los actuadores.
+
+El funcionamiento completo del sistema puede observarse en el siguiente video:
 
 
 
@@ -468,4 +527,4 @@ A continuación se presenta un video del funcionamiento del programa realizado
 
 * V. Mazzari, «I2C communication: Lego Mindstorms NXT brick, sonar sensor and a Saleae logic analyser», Génération Robots - Blog, 23 de febrero de 2023. Disponible en: https://www.generationrobots.com/blog/en/i2c-communication-lego-mindstorms-nxt-brick-sonar-sensor-and-a-saleae-logic-analyser/?srsltid=AfmBOoof5rZjMT62RZPMTAu3v9xz6ochArpMappM3TvVxX7Lxs3yxEUz
 * ev3dev.org, «Input / Output Ports — ev3dev-jessie Linux kernel drivers 19 documentation». Disponible en: https://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-jessie/ports.html
-
+* python.org, «HOW TO - Programación con sockets», Python Documentation. Disponible en: https://docs.python.org/es/3.13/howto/sockets.html
