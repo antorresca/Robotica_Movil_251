@@ -465,14 +465,15 @@ Una vez establecida la conexión de red con el robot, es posible proceder con lo
 
 1.1. Lectura de sensores
 
-Una vez establecida la comunicación con el robot, se realizaron las modificaciones correspondientes al programa [NOMBRE_DEL_PROGRAMA_EN_EV3]. Paralelamente, se desarrolló un nodo de ROS en Python denominado [NOMBRE_DEL_NODO].
+Una vez establecida la comunicación con el robot, se realizaron las modificaciones correspondientes al programa [lectura_sensores.py](ROS_EV3/Sensores/lectura_sensores.py). Paralelamente, se desarrolló un nodo de ROS en Python denominado [NOMBRE_DEL_NODO].
 
-En términos generales, el EV3 envía periódicamente (cada X segundos) los datos obtenidos por sus sensores a través de la red. El nodo de ROS recibe esta información mediante un socket, y posteriormente la publica en el tópico [NOMBRE_DEL_TÓPICO].
+En términos generales, el EV3 envía periódicamente (cada 0.1 segundos) los datos obtenidos por sus sensores a través de la red. El nodo de ROS recibe esta información mediante un socket, y posteriormente la publica en el tópico [NOMBRE_DEL_TÓPICO].
 
 El funcionamiento de este sistema puede observarse en el siguiente video:
 
-
-
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/e30f26e1-afbb-4691-a426-1fa7a410a9a8" />
+</div>
 
 1.2. GUI teleoperacion
 
