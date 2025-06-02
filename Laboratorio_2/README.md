@@ -455,7 +455,7 @@ Para utilizar ROS con el robot Lego Mindstorms EV3, no es posible ejecutarlo dir
 
 Una de estas técnicas consiste en establecer una comunicación mediante sockets a través de un programa en Python. Este programa permite configurar el robot como un sistema de entrada/salida (I/O), lo que posibilita la lectura de sensores y el envío de comandos a los actuadores a través de la red.
 
-En paralelo, un nodo de ROS en el PC se comunica por red con el EV3 para llevar a cabo el control del robot. El programa desarrollado para este fin fue [NOMBRE_DEL_PROGRAMA], el cual, al ejecutarse en el EV3, muestra la siguiente salida:
+En paralelo, un nodo de ROS en el PC se comunica por red con el EV3 para llevar a cabo el control del robot. El programa desarrollado para este fin fue [server.py](ROS_EV3/Conexion/server.py), el cual, al ejecutarse en el EV3, muestra la siguiente salida:
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/a2554114-3f0b-4fa3-87aa-85f3e3dff94e" />
@@ -477,7 +477,7 @@ El funcionamiento de este sistema puede observarse en el siguiente video:
 
 1.2. GUI teleoperacion
 
-Para la teleoperación del EV3, se utilizaron el programa [NOMBRE_DEL_PROGRAMA_EN_EV3] y el nodo de ROS [NOMBRE_DEL_NODO_EN_PC]. Con estos programas, se implementaron las siguientes funcionalidades mediante el uso del teclado, controlando los motores del robot a un X % de su velocidad máxima:
+Para la teleoperación del EV3, se utilizó el programa [ev3_teleop_server.py](ROS_EV3/Teleoperacion/ev3_teleop_server.py) y el nodo de ROS [ev3_teleop_client.py](ROS_EV3/Teleoperacion/ev3_teleop/scripts/ev3_teleop_client.py). Con estos programas, se implementaron las siguientes funcionalidades mediante el uso del teclado, controlando los motores del robot a un X % de su velocidad máxima:
 
 * *W* avanzar
 * *S* retroceder
