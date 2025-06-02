@@ -515,13 +515,16 @@ graph TD
 
 Para la implementación, se utilizaron dos nodos de ROS:
 
-* *XXX*: Nodo encargado de la comunicación con el robot. Se encarga de leer los datos de los sensores y enviar comandos a los actuadores a través de la red.
-* *WWW*: Nodo de control de movimiento. Este nodo procesa los datos publicados en el tópico YYY y, según las condiciones del diagrama de flujo, publica comandos de control en el tópico ZZZ.
+* [EV3_Bridge](ROS_EV3/Rutina/src/EV3_Bridge/scripts/ev3_socket_bridge.py): Nodo encargado de la comunicación con el robot. Se encarga de leer los datos de los sensores y enviar comandos a los actuadores a través de la red.
+* [EV3_instruction](ROS_EV3/Rutina/src/EV3_Instruction/scripts/ev3_instruction_node.py): Nodo de control de movimiento. Este nodo procesa los datos publicados en el tópico *ev3/sensors* y, según las condiciones dadas, publica comandos de control en el tópico *ev3/instructions*.
 
-Adicionalmente, se empleó un script en Python ([NOMBRE_DEL_SCRIPT]) ejecutado directamente en el EV3. Este programa se encarga de enviar los datos de los sensores y ejecutar las órdenes recibidas para controlar los actuadores.
+Adicionalmente, se empleó un script en Python ([ev3_client.py](ROS_EV3/Rutina/ev3_client.py) ejecutado directamente en el EV3. Este programa se encarga de enviar los datos de los sensores y ejecutar las órdenes recibidas para controlar los actuadores.
 
 El funcionamiento completo del sistema puede observarse en el siguiente video:
 
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/fa0089ac-f7b5-402b-9dd7-5a6d1e279d06" />
+</div>
 
 
 # 5. 🪶 Referencias
