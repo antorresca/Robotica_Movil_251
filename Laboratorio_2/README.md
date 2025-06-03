@@ -367,7 +367,7 @@ Finalmente, con el except maneja una excepción en caso de que se oprima ctrl+c 
 <div style="display: flex; justify-content: center; gap: 10px;"  align="center">
   <img src="https://github.com/user-attachments/assets/920aa521-c4bf-4183-a66f-12564db9823a" width="500" title="pysubposepy">
 </div>
-Publicaion de Pose con pysubposepy
+Publicacion de Pose con pysubposepy
 
 Igual que el programa anterior en su primera línea le dice al sistema operativo el tipo de interprete que debe usar, en este caso debe usar Python 3.
 Importa rospy para manejar ROS, twist para manejar la velocidad y random para dar valores aleatorios.
@@ -381,6 +381,26 @@ Finalmente, con el except maneja una excepción en caso de que se oprima ctrl+c 
  <img src="https://github.com/user-attachments/assets/db4d8e2c-0ff0-45ff-aedd-42f41f58e203" width="500"  title="pypubvel">
 </div>
 Trayectoria Aleatoria de Turtlesim con pypubvel
+
+Haciendo uso de las funciones de ROS *turtlesim_node* y *turtle_teleop_key* movemos la tortuga por el borde del mapa hasta que haya colisión, con la suscripción a turtlesim_node conocemos la posición de la tortuga y procedemos a llevarla por las cuatro esquinas como muestran las siguientes imágenes.
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/fb3ae6ec-121d-4362-bc3b-ae5d5d6eade2" width="500"  title="der">
+</div>
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/f36f1be9-ac60-4dee-83e8-4adbc289b8ff" width="500"  title="supder">
+</div>
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/68ebaf6a-23a2-43f2-bdf7-acadce5c40a3" width="500"  title="supizq">
+</div>
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/e439731b-43b7-4410-9b88-331443f71bb0" width="500"  title="infizq">
+</div>
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/2caf0c5b-1617-4755-8564-498e268c7444" width="500"  title="infder">
+</div>
+
+
+
 
 #### 4.2. 🌐🐢🤖 ROS Kuboki
 Desarrolle un programa que permita realizar la lectura del sensor de acantilado (cliff) del robot Kobuki y reproduzca un sonido al detectarse un evento asociado a dicho sensor. De forma simultánea, habilite el modo de teleoperación mediante teclado para controlar el movimiento del robot.
