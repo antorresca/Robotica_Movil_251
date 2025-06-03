@@ -391,36 +391,7 @@ Usando las librerías propias del robot Kobuki, las cuales fueron instaladas en 
 
 A continuación se pressenta el código elaborado:
 
-```python
-#!/usr/bin/env python
-
-import rospy
-from kobuki_msgs.msg import CliffEvent, Sound
-
-def cliff_callback(msg):
-    # Verifica el tipo de sensor que detectó el evento
-    rospy.loginfo(f"Cliff event detected from sensor: {msg.sensor}")
-    
-    
-    # Publica un sonido en el tópico /mobile_base/commands/sound
-    sound_msg = Sound()
-    sound_msg.value = 5
-    sound_pub.publish(sound_msg)
-    rospy.loginfo("Published sound command with value: 5")
-    
-if __name__ == '__main__':
-    rospy.init_node('clifh', anonymous=True)
-
-    # Publicador para el tópico /mobile_base/commands/sound
-    sound_pub = rospy.Publisher('/mobile_base/commands/sound', Sound, queue_size=10)
-
-    rospy.loginfo("Cliff event handler node started.")
-
-    # Suscribirse al tópico /mobile_base/events/cliff
-    rospy.Subscriber('/mobile_base/events/cliff', CliffEvent, cliff_callback)
-    rospy.spin()
-    # Inicializa el publicador para el tópico /mobile_base/commands/sound
-```
+[clifh.py](ROS_EV3/clifh.py)
     
 Además del script es necesario modificar el archivo CMakeLists.txt como se resalta a continuación:
 
