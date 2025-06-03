@@ -420,7 +420,8 @@ En este caso se ven dos servicios usados, turtle1_teleport=rospy.ServiceProxy('t
 resp1=turtle1_teleport(X, Y, R), donde X y Y son las coordenadas de la tortuga y R los radianes de rotación de esta.
 El otro servicio usado es clear1=rospy.ServiceProxy('clear',Empty), 	el cual permite borrar los trazos generados en pantalla con la instrucción clear1().
 
-Finalmente se desarrolla un programa que crea dos tortugas y una se encarga de dibujar un triangulo, mientras que la otra realiza un cuadrado.
+Finalmente se desarrolla un programa que crea dos tortugas y una se encarga de dibujar un triangulo, mientras que la otra realiza un cuadrado [pycuadradomej.py](ROS_Turtle/pycuadradomej.py).
+Lanzando varios paquetes con el archivos [cuatrian.launch](ROS_Turtle/cuatrian.launch)
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/84d78b5a-ac70-4fe0-bb73-4da7395b76a4" width="500"  title="infder">
 </div>
