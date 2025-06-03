@@ -406,7 +406,7 @@ A continuacón se resalta la línea de código incluida
 <node pkg="kobuki_node" type="clifh.py" name="clifh" output="screen"/>
 ```
 
-Cabe resaltar que el nodo se creó dentro del nodo principal [kobuki_node](ROS_Kobuki/kobuki_node), se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
+Cabe resaltar que el nodo se creó dentro del nodo principal **kobuki_node**, se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
 
 A continuación se presenta un video del funcionamiento del programa realizado 
 
