@@ -410,7 +410,17 @@ Inferior izquierda (-0.025373, 11.108388)
 Inferior derecha (11.115529, 11.106618)
 
 Lo que nos da un rango en X de -0.031119 a 11.115529 y un rango en Y de -0.007457 a 11.108388, interpretando esto en un mapa de ancho en X de 11.1466648 y en Y de 11.115845
+Servicios en ROS usando Python
+Los servicios de ROS pueden ser utilizados con Python a través de rospy, esto llamando un servicio de la forma   rospy.ServiceProxy con el nombre del servicio que querramos llamar, algunas veces es importante hacer uso de  rospy.wait_for_service() para que espere hasta que el servicio esté disponible.
+El uso de los servicios es importante cuando se requiere una acción especifica con respuesta inmediata sin necesidad de obtener datos de flujo continuo.
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/3b8b378f-2f93-43eb-9a03-0eae9752d115" width="500"  title="pycuadrado">
+</div>
+En este caso se ven dos servicios usados, turtle1_teleport=rospy.ServiceProxy('turtle1/teleport_absolute',TeleportAbsolute), el cual permite teletransportar la tortuga a la coordenada deseada con la instrucción 
+resp1=turtle1_teleport(X, Y, R), donde X y Y son las coordenadas de la tortuga y R los radianes de rotación de esta.
+El otro servicio usado es clear1=rospy.ServiceProxy('clear',Empty), 	el cual permite borrar los trazos generados en pantalla con la instrucción clear1().
 
+Finalmente se desarrolla un programa que crea dos tortugas y una se encarga de dibujar un triangulo, mientras que la otra realiza un cuadrado.
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/84d78b5a-ac70-4fe0-bb73-4da7395b76a4" width="500"  title="infder">
 </div>
