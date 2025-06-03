@@ -391,26 +391,22 @@ Usando las librerías propias del robot Kobuki, las cuales fueron instaladas en 
 
 A continuación se pressenta el código elaborado:
 
-[clifh.py](ROS_EV3/clifh.py)
+[clifh.py](ROS_Kobuki/clifh.py)
     
-Además del script es necesario modificar el archivo CMakeLists.txt como se resalta a continuación:
+Además del script es necesario modificar el archivo [CMakeLists.txt](ROS_Kobuki/CMakeLists.txt) como se resalta a continuación:
 
 ```python
-install(PROGRAMS scripts/getOdom2D.py
-                 scripts/getYaw.py
-                 ***scripts/clifh.py***
-        DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+                 scripts/clifh.py
 ```
 
-También es necesario modificar el archivo **launch** para que al ejecutarlo lance el nodo escrito que envía el mensaje de alerta. 
+También es necesario modificar el archivo [safe_keyop.launch](ROS_Kobuki/safe_keyop.launch) para que al ejecutarlo lance el nodo escrito que envía el mensaje de alerta. 
 A continuacón se resalta la línea de código incluida
 
 ```python
 <node pkg="kobuki_node" type="clifh.py" name="clifh" output="screen"/>
 ```
 
-Cabe resaltar que el nodo se creó dentro del nodo principal **kobuki_node**, se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
+Cabe resaltar que el nodo se creó dentro del nodo principal [kobuki_node](ROS_Kobuki/kobuki_node), se escribió en Python y se ejecuta dentro del launch **minimal.launch** para que se ejecute mientras se ejecutan los nodos principales dentro de las librerías de kobuki.
 
 A continuación se presenta un video del funcionamiento del programa realizado 
 
