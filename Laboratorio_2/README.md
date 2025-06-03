@@ -386,19 +386,35 @@ Haciendo uso de las funciones de ROS *turtlesim_node* y *turtle_teleop_key* move
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/fb3ae6ec-121d-4362-bc3b-ae5d5d6eade2" width="500"  title="der">
 </div>
+Tortuga totalemente a la derecha
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/f36f1be9-ac60-4dee-83e8-4adbc289b8ff" width="500"  title="supder">
 </div>
+Tortuga en la esquina superior derecha
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/68ebaf6a-23a2-43f2-bdf7-acadce5c40a3" width="500"  title="supizq">
 </div>
+Tortuga en la esquina superior izquierda
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/e439731b-43b7-4410-9b88-331443f71bb0" width="500"  title="infizq">
 </div>
+Tortuga en la esquina inferior izquierda
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/2caf0c5b-1617-4755-8564-498e268c7444" width="500"  title="infder">
 </div>
+Tortuga en la esquina inferior derecha
+Con estos datos el mapa tiene esquinas en:
+Superior derecha (11.10902, 0.024874)
+Superior izquierda (-0.031119, -0.007457)
+Inferior izquierda (-0.025373, 11.108388)
+Inferior derecha (11.115529, 11.106618)
 
+Lo que nos da un rango en X de -0.031119 a 11.115529 y un rango en Y de -0.007457 a 11.108388, interpretando esto en un mapa de ancho en X de 11.1466648 y en Y de 11.115845
+
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/84d78b5a-ac70-4fe0-bb73-4da7395b76a4" width="500"  title="infder">
+</div>
+Posicion final de las tortugas con el .launch
 
 
 
