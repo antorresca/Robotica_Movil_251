@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="turtle"/>
+    <node pkg="laboratorio_2" type="pycuadradomej.py" name="triforce" output="screen"/>
+</launch>
