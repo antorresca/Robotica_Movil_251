@@ -1,4 +1,4 @@
-# 🤖Laboratorio 2: Introducción al uso de sensores y ROS
+# 🤖Laboratorio 2: Introducción a la navegación con robots
 
 ## 🪶Autores
 
@@ -40,6 +40,12 @@ En el campo de la robótica ha diseñado o desarrollado diversos tipos de robots
 [BEAM Robotics - Robohub](https://robohub.org/robots-beam-robotics/)
 [WowWee Robosapien X](https://wowwee.com/robosapien-x/)
 
-4. Mencione al menos tres algoritmos de planificación de rutas para espacios con obstáculos.
+3. Mencione al menos tres algoritmos de planificación de rutas para espacios con obstáculos.
+
+  - Tetha*
+  - A*
+  - D*
+  - D* Enfocado
+  
 5. Describa brevemente los algoritmos Bug 0, Bug 1 y Bug 2.
 6. Describa al menos un algoritmo de solución de laberintos (maze algorithm) aplicado en robótica móvil.
