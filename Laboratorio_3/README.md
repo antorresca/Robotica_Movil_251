@@ -1,4 +1,4 @@
-# 🤖Laboratorio 2: Introducción a la navegación con robots
+# 🤖Laboratorio 3: Introducción a la navegación con robots
 
 ## 🪶Autores
 
@@ -46,6 +46,9 @@ En el campo de la robótica ha diseñado o desarrollado diversos tipos de robots
   - A*
   - D*
   - D* Enfocado
+En el siguiente video una aplicacion del algoritmo A* en los videojuegos
+ https://youtu.be/hQa9JTtq4Ok?si=0bJEJCNJPxgE9dPp
+
   
 5. Describa brevemente los algoritmos Bug 0, Bug 1 y Bug 2.
    
