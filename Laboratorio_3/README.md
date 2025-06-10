@@ -48,12 +48,16 @@ En el campo de la robótica ha diseñado o desarrollado diversos tipos de robots
   - D* Enfocado
   
 5. Describa brevemente los algoritmos Bug 0, Bug 1 y Bug 2.
+   
 Un algoritmo Bug es un tipo de algoritmo de planeacion de movimiento usado en robotica , particularmente para la navegacion de robots mobiles en ambientes con obstaculos desconocidos
   - Bug 0 : Es el algoritmo bug mas sencillo y consiste en seguir el borde del obstaculo hasta que encuentre una ruta disponible a la cual llegar, sin embargo este algoritmo puede fallar en escenarios donde el robot encuentra obstaculos donde requiera un movimiento de retroceso. 
   - Bug 1 : A diferencia del algoritmo Bug 0, este algoritmo garantiza que si existe una ruta hasta la meta el robot la alcanzará y consiste en seguir completamente el borde del obstaculo registrando el punto mas cercano entre el objeto y la meta. Al momento de encontrar el punto sigue su camino hacia la meta.
   - Bug 2 : Este algoritmo es el mas eficiente de todos gracias a su capacidad de minimizar desvios innecesarios. Su funcionamiento es similar a los dos algoritmos anteriores, pero su diferencia es que este algoritmo traza una linea recta entre el inicio y la meta, esta linea es seguida por el robot hasta que encuentra un obstaculo, el robot sigue el borde del obstaculo hasta que vuelve a encontrar la linea para posteriormente seguirla hasta llegar a la meta.
-
-
-
  
-7. Describa al menos un algoritmo de solución de laberintos (maze algorithm) aplicado en robótica móvil.
+6. Describa al menos un algoritmo de solución de laberintos (maze algorithm) aplicado en robótica móvil.
+   
+Uno de los algoritmos mas utilizados para la solución de laberintos es el algoritmo A*, sus principales ventajas es que siempre encuentra rutas optimas si las heuristicas son apropiadas y se ajusta segun los movimientos permitidos , tambien es capaz de de penalizar giros si se agregan a la funcion de costo, este algoritmo como se menciona anteriormente utiliza heuristicas para encontrar la ruta mas corta hasta la meta, considerando la distancia recorrida y una estimacion del camino restante. Este algoritmo modela el laberinto como un grafo donde cada nodo es una posicion y las aristas corresponden a los posibles movimientos cercanos .
+
+La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referencia al costo acumulado desde el inicio hasta el nodo (n) , h(n) es la estimacion heuristica del costo restante hasta la meta . Luego se hace un proceso iterativo con el nodo inicial, en cada paso se extrae el nodo menor, se expanden generando sus vecinos y se actualizan g y f . El proceso iterativo finaliza hasta alcanzar una meta.
+
+
