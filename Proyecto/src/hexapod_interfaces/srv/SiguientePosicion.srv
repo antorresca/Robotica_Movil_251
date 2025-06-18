@@ -1,3 +1,0 @@
-int32 index #Entrada: indice de trayectoria
----
-float32[] positions #Salida: posicion de articulaciones
