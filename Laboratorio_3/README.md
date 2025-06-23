@@ -79,7 +79,19 @@ Para el desarrolo del algoritmo maze se implementaron dos tecnicas de programaci
 La primer tecnica fue un seguidor de pared izquierda programado mediante la programación de bloques EV3, la cual es la siguiente.
 Iniciamos determinando los motores del robot y llevando a 0 los valores de los sensores de giro y de motores, ademas declaramos una variable para la distancia maxima del muro.
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
-<img src="https://github.com/user-attachments/assets/c19e08f2-8c26-444b-8e37-66641ea77d77" width="500"  title="infizq">
+<img src="https://github.com/user-attachments/assets/c19e08f2-8c26-444b-8e37-66641ea77d77" width="500"  title="inicio">
+</div>
+
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/ceb52dd1-3383-4371-be03-42217a996515" width="500"  title="izq">
+</div>
+
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/e8018aea-d3bf-4aa7-99a7-02c3e32f436d" width="500"  title="cont">
+</div>
+
+<div style="display: flex; justify-content: center; gap: 10px;" align="center">
+<img src="https://github.com/user-attachments/assets/9bf80b95-e8fc-4ba6-a97e-ed3bc9665b6a" width="500"  title="infizq">
 </div>
 
 
