@@ -92,7 +92,14 @@ La primer tecnica fue un seguidor de pared izquierda programado mediante la prog
   </a>
 </p>
 
-La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV3
+La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV3 . Para esta implementación se utilizo la siguiente configuración del robot 
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3eb938cd-5837-4ba2-beef-26568eeae1e2" alt="Parte Frontal" width="300"/>
+  <img src="https://github.com/user-attachments/assets/1a2521cd-3655-4a60-a28f-95c74e34fae1" alt="Parte Trasera" width="300"/>
+</p>
+
+En el siguiente video esta la demostración de la solución del laberinto 
 
 <div align="center">
   <video src="https://github.com/user-attachments/assets/b3cf9e77-22b0-431d-8fb4-1d50ca97d32f" />
