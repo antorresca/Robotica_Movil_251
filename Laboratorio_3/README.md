@@ -77,24 +77,24 @@ Para la primera misión se implemento un algoritmo bug 2 con python mediante con
 Para el desarrolo del algoritmo maze se implementaron dos tecnicas de programación :
 
 La primer tecnica fue un seguidor de pared izquierda programado mediante la programación de bloques EV3, la cual es la siguiente.
-Iniciamos determinando los motores del robot y llevando a 0 los valores de los sensores de giro y de motores, ademas declaramos una variable para la distancia maxima del muro.
+Iniciamos determinando los motores del robot y llevando a 0 los valores de los sensores de giro y de motores, además declaramos una variable para la distancia máxima del muro.
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/c19e08f2-8c26-444b-8e37-66641ea77d77" width="500"  title="inicio">
 </div>
-
+A continuacion ubicamos un bucle para que siempre esté verificando los sensores y de una respuesta dependiendo de este, en el primer bloque tenemos el giro a la izquierda, en donde el sensor de ultrasonido verifica que no haya muro y que tampoco esté activado el sensor de toque. 
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/ceb52dd1-3383-4371-be03-42217a996515" width="500"  title="izq">
 </div>
-
+La segunda condición es que continue hacia adelante mientras la distncia del sensor no sea mayor a la determinada.
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/e8018aea-d3bf-4aa7-99a7-02c3e32f436d" width="500"  title="cont">
 </div>
-
+Finalmente cuando el sensor de toque es activado y además el ultrasonido sabe que tiene pared a la izquierda, se interpreta que debe haber un giro a la derecha, como el sensor de toque está activado es necesario retroceder y luego dar el giro.
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/9bf80b95-e8fc-4ba6-a97e-ed3bc9665b6a" width="500"  title="infizq">
 </div>
 
-
+En el siguiente video una demostracion del codigo en funcionamiento.
 
 <p align="center">
   <a href="https://youtu.be/VwreGX4NfRQ">
