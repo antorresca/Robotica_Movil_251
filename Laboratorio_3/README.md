@@ -68,6 +68,12 @@ Uno de los algoritmos mas utilizados para la solución de laberintos es el algor
 La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referencia al costo acumulado desde el inicio hasta el nodo (n) , h(n) es la estimacion heuristica del costo restante hasta la meta . Luego se hace un proceso iterativo con el nodo inicial, en cada paso se extrae el nodo menor, se expanden generando sus vecinos y se actualizan g y f . El proceso iterativo finaliza hasta alcanzar una meta.
 
 ### 2.2. 🏎️↪️🧱 Misión 1: Evite los obstáculos
+Para la primera misión se implemento un algoritmo bug 2 con python mediante conexion SSH al robot lego EV3
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/0f4b8e7e-829b-46dd-acc9-d15be1c27d49" />
+</div>
+
 
 ### 2.3. 🏎️🔀🏁 Misión 2: Supere el laberinto
 En el desarrollo de un algoritmo Maze del tipo seguidor de pared izquierda se logró una con programacion de bloques EV3, la cual es la siguiente.
