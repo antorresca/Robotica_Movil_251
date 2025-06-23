@@ -100,6 +100,9 @@ La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV
 
 ## 📖Referencias
 
+* «Robot Proving Grounds». Disponible en: https://existentialrobotics.org/RobotProvingGrounds/algorithms/planning
+* «Robot Motion Planning: Bug Algorithms» . Disponible en : https://medium.com/%40sefakurtipek/robot-motion-planning-bug-algorithms-34cf5175ab39
+
 
 
 
