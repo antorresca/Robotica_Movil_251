@@ -64,6 +64,9 @@ Uno de los algoritmos mas utilizados para la solución de laberintos es el algor
 La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referencia al costo acumulado desde el inicio hasta el nodo (n) , h(n) es la estimacion heuristica del costo restante hasta la meta . Luego se hace un proceso iterativo con el nodo inicial, en cada paso se extrae el nodo menor, se expanden generando sus vecinos y se actualizan g y f . El proceso iterativo finaliza hasta alcanzar una meta.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VwreGX4NfRQ?si=AtXDhfQGC-ebXElm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+[![Miniatura del video](https://img.youtube.com/vi/hQa9JTtq4Ok/0.jpg)](https://youtu.be/VwreGX4NfRQ?si=toCawhL0IGmiKgpG)
+
 
 
