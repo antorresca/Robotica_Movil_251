@@ -48,15 +48,11 @@ En el campo de la robótica ha diseñado o desarrollado diversos tipos de robots
   - D* Enfocado
 En el siguiente video una aplicacion del algoritmo A* en los videojuegos
 
- 
-
 <p align="center">
-  <a href="https://youtu.be/VwreGX4NfRQ">
-    <img src="https://img.youtube.com/vi/VwreGX4NfRQ/0.jpg" alt="Laboratorio 3 - Introducción a la navegación con robots" />
+  <a href="https://youtu.be/hQa9JTtq4Ok">
+    <img src="https://img.youtube.com/vi/hQa9JTtq4Ok/0.jpg" alt="Aplicación del algoritmo A* en videojuegos" />
   </a>
 </p>
-
-
   
 5. Describa brevemente los algoritmos Bug 0, Bug 1 y Bug 2.
    
@@ -77,8 +73,8 @@ La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referenc
 [![Laboratorio 3 - Introducción a la navegación con robots](https://img.youtube.com/vi/VwreGX4NfRQ/0.jpg)](https://youtu.be/VwreGX4NfRQ)
 
 <p align="center">
-  <a href="https://youtu.be/hQa9JTtq4Ok">
-    <img src="https://img.youtube.com/vi/hQa9JTtq4Ok/0.jpg" alt="Aplicación del algoritmo A* en videojuegos" />
+  <a href="https://youtu.be/VwreGX4NfRQ">
+    <img src="https://img.youtube.com/vi/VwreGX4NfRQ/0.jpg" alt="Laboratorio 3 - Introducción a la navegación con robots" />
   </a>
 </p>
 
