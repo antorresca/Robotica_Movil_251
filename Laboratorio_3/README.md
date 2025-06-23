@@ -49,9 +49,12 @@ En el campo de la robótica ha diseñado o desarrollado diversos tipos de robots
 En el siguiente video una aplicacion del algoritmo A* en los videojuegos
 
  
- https://youtu.be/hQa9JTtq4Ok?si=0bJEJCNJPxgE9dPp
 
-[![Aplicación del algoritmo A* en videojuegos](https://img.youtube.com/vi/hQa9JTtq4Ok/0.jpg)](https://youtu.be/hQa9JTtq4Ok)
+<p align="center">
+  <a href="https://youtu.be/VwreGX4NfRQ">
+    <img src="https://img.youtube.com/vi/VwreGX4NfRQ/0.jpg" alt="Laboratorio 3 - Introducción a la navegación con robots" />
+  </a>
+</p>
 
 
   
@@ -73,6 +76,10 @@ La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referenc
 
 [![Laboratorio 3 - Introducción a la navegación con robots](https://img.youtube.com/vi/VwreGX4NfRQ/0.jpg)](https://youtu.be/VwreGX4NfRQ)
 
-
+<p align="center">
+  <a href="https://youtu.be/hQa9JTtq4Ok">
+    <img src="https://img.youtube.com/vi/hQa9JTtq4Ok/0.jpg" alt="Aplicación del algoritmo A* en videojuegos" />
+  </a>
+</p>
 
 
