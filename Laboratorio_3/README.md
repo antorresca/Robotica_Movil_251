@@ -79,7 +79,7 @@ Para la primera misión se implemento un algoritmo bug 2 con python mediante con
 Para el desarrolo del algoritmo maze se implementaron dos tecnicas de programación :
 
 La primer tecnica fue un seguidor de pared izquierda programado mediante la programación de bloques EV3, la cual es la siguiente.
-
+Iniciamos determinando los motores del robot y llevando a 0 los valores de los sensores de giro y de motores, ademas declaramos una variable para la distancia maxima del muro.
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/c19e08f2-8c26-444b-8e37-66641ea77d77" width="500"  title="infizq">
 </div>
