@@ -76,7 +76,9 @@ Para la primera misión se implemento un algoritmo bug 2 con python mediante con
 
 
 ### 2.3. 🏎️🔀🏁 Misión 2: Supere el laberinto
-En el desarrollo de un algoritmo Maze del tipo seguidor de pared izquierda se logró una con programacion de bloques EV3, la cual es la siguiente.
+Para el desarrolo del algoritmo maze se implementaron dos tecnicas de programación :
+
+La primer tecnica fue un seguidor de pared izquierda programado mediante la programación de bloques EV3, la cual es la siguiente.
 
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/c19e08f2-8c26-444b-8e37-66641ea77d77" width="500"  title="infizq">
@@ -89,5 +91,15 @@ En el desarrollo de un algoritmo Maze del tipo seguidor de pared izquierda se lo
     <img src="https://img.youtube.com/vi/VwreGX4NfRQ/0.jpg" alt="Laboratorio 3 - Introducción a la navegación con robots" />
   </a>
 </p>
+
+La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV3
+
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/b3cf9e77-22b0-431d-8fb4-1d50ca97d32f" />
+</div>
+
+
+
+
 
 
