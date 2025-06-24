@@ -70,6 +70,113 @@ La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referenc
 ### 2.2. 🏎️↪️🧱 Misión 1: Evite los obstáculos
 Para la primera misión se implemento un algoritmo bug 2 con python mediante conexion SSH al robot lego EV3
 
+    INICIO
+    
+    CONFIGURAR sensores:
+        - Sensor de color en el puerto INPUT_2
+        - Sensor ultrasónico en INPUT_4
+        - Sensor infrarrojo en INPUT_3
+    
+    CONFIGURAR motores:
+        - Motor izquierdo en OUTPUT_B
+        - Motor derecho en OUTPUT_C
+    
+    DEFINIR parámetros de navegación:
+        - UMBRAL_ULTRA ← 6.0 cm
+        - UMBRAL_IR ← 10.0 mm
+        - V_AVANCE ← 30 (velocidad %)
+        - T_CORREC ← 0.05 s
+        - MAX_SEARCH_SEC ← 2.0 s
+    
+    DEFINIR estados:
+        - FOLLOW_LINE ← 0
+        - BOUNDARY_FOLLOW ← 1
+        - OBJETIVO_ALCANZADO ← 2
+    
+    estado ← FOLLOW_LINE
+    
+    MOSTRAR "Iniciando navegación..."
+    
+    MIENTRAS verdadero HACER:
+
+    LEER color del suelo (cs.color)
+    LEER distancia ultrasónica (us)
+    LEER proximidad infrarroja (ir)
+
+    SI color detectado es NEGRO ENTONCES
+        estado ← FOLLOW_LINE
+
+    dist_prev ← 100
+    dist_curr ← 99
+
+    --- ESTADO: FOLLOW_LINE ---
+    SI estado = FOLLOW_LINE ENTONCES
+        MOSTRAR color leído
+
+        SI obstáculo al frente (dist_us < UMBRAL_ULTRA) ENTONCES
+            estado ← BOUNDARY_FOLLOW
+
+        SINO SI pierde la línea y no hay obstáculo ENTONCES
+            INICIAR temporizador
+
+            MIENTRAS no ve la línea Y tiempo < MAX_SEARCH_SEC HACER
+                GIRAR levemente a la izquierda
+
+            SI aún no ve la línea ENTONCES
+                GIRAR a la derecha hasta encontrar línea
+
+            estado ← FOLLOW_LINE
+
+        SINO
+            AVANZAR recto
+
+        SI color detectado es VERDE (color = 5) ENTONCES
+            estado ← OBJETIVO_ALCANZADO
+
+    --- ESTADO: BOUNDARY_FOLLOW ---
+    SI estado = BOUNDARY_FOLLOW ENTONCES
+        MOSTRAR "Entró a estado BOUNDARY_FOLLOW"
+
+        MIENTRAS obstáculo frontal detectado (dist_us < 30) HACER
+            GIRAR suavemente a la derecha hasta despejar obstáculo
+
+        DETENER motores
+
+        MIENTRAS ir.proximity aumenta (dist_prev - dist_curr > 0) HACER
+            GIRAR para quedar paralelo al obstáculo
+            ACTUALIZAR distancias
+
+        MIENTRAS infrarrojo detecte obstáculo (dist_curr < 50) Y no ve línea ENTONCES
+            MOSTRAR distancia IR y color
+
+            SI muy cerca del obstáculo (dist_curr < 4) ENTONCES
+                ALEJARSE girando a la derecha
+
+            SI muy lejos del obstáculo (dist_curr > 10) ENTONCES
+                ACERCARSE girando a la izquierda
+
+            AVANZAR recto
+            ACTUALIZAR dist_curr
+
+        DETENER motores
+        estado ← FOLLOW_LINE
+
+    --- ESTADO: OBJETIVO_ALCANZADO ---
+    SI estado = OBJETIVO_ALCANZADO ENTONCES
+        DETENER motores
+        MOSTRAR "Objetivo Alcanzado!!!"
+        SALIR del bucle
+
+    MANEJAR interrupción por teclado:
+        DETENER motores
+    
+    MOSTRAR "Navegación finalizada."
+    FIN
+    
+
+
+
+
 <p align="center">
 <a href="https://youtu.be/EMmH6wIEKpY">
 <img src="https://img.youtube.com/vi/EMmH6wIEKpY/0.jpg" alt="<Texto_altenterno>" width="<Algoritmo Bug 2>">
