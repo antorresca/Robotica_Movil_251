@@ -70,9 +70,11 @@ La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referenc
 ### 2.2. 🏎️↪️🧱 Misión 1: Evite los obstáculos
 Para la primera misión se implemento un algoritmo bug 2 con python mediante conexion SSH al robot lego EV3
 
-<div align="center">
-  <video src="https://github.com/user-attachments/assets/0f4b8e7e-829b-46dd-acc9-d15be1c27d49" />
-</div>
+<p align="center">
+<a href="https://youtu.be/EMmH6wIEKpY">
+<img src="https://img.youtube.com/vi/EMmH6wIEKpY/0.jpg" alt="<Texto_altenterno>" width="<Algoritmo Bug 2>">
+</a>
+</p>
 
 
 ### 2.3. 🏎️🔀🏁 Misión 2: Supere el laberinto
