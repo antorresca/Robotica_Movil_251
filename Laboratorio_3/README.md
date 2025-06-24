@@ -244,7 +244,27 @@ En el siguiente video una demostracion del codigo en funcionamiento.
   </a>
 </p>
 
-La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV3 . Para esta implementación se utilizo la siguiente configuración del robot 
+La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV3 . Para esta implementación se utilizo la siguiente configuración del robot, para esta implementación la lógica aplicada se plantea en el siguiente diagrama de flujo:
+
+```mermaid
+flowchart TD
+        A(["Inicio"])
+        A --> B["Configurar sensores"]
+        B --> C["Configurar motores"]
+        C --> D["Configurar distancias"]
+        D --> E["Define estados"]
+        E --> L{"Meta alcanzada?"}
+        L -- Sí --> Z(FIN)
+        L -- No --> F{"Pared al lado?"}
+        F -- Sí --> G["Avanza manteniendo distancia"]
+        F -- No --> H{"Pared al frente?"}
+        H -- Sí --> I["Girar a la izquierda"]
+        G --> J{"Pared al frente?"}
+        J -- No --> G
+        J -- Sí --> K["Gira a derecha"]
+        I --> L
+        K --> L
+```
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/3eb938cd-5837-4ba2-beef-26568eeae1e2" alt="Parte Frontal" width="300"/>
