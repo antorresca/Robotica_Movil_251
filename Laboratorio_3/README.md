@@ -120,6 +120,88 @@ La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV
   <img src="https://github.com/user-attachments/assets/1a2521cd-3655-4a60-a28f-95c74e34fae1" alt="Parte Trasera" width="300"/>
 </p>
 
+A continuación se hace la explicación del código utilizado
+
+    INICIO
+
+    CONFIGURAR sensores:
+      - Sensor ultrasónico en INPUT_4
+      - Sensor infrarrojo en INPUT_3
+
+    CONFIGURAR motores:
+        - Motor izquierdo en OUTPUT_B
+        - Motor derecho en OUTPUT_C
+
+    DEFINIR parámetros:
+      - UMBRAL_ULTRA = 6 cm
+      - V_AVANCE = 30 % velocidad
+      - T_CORREC = 0.05 segundos
+      - MAX_SEARCH_SEC = 2.0 segundos
+
+    DEFINIR estados:
+      - BOUNDARY_FOLLOW = 1
+      - GOAL_REACHED = 2
+
+    estado ← BOUNDARY_FOLLOW
+    distancia_actual ← 99
+    distancia_anterior ← 100
+  
+    MOSTRAR "Iniciando navegación"
+
+    MIENTRAS verdadero HACER
+      LEER distancia ultrasónica (dist_us)
+      LEER proximidad infrarroja (dist_ir)
+
+    SI estado = BOUNDARY_FOLLOW ENTONCES
+        MOSTRAR "Entrando a estado: BOUNDARY_FOLLOW"
+
+        # Caso 1: Si obstáculo al frente
+        MIENTRAS distancia ultrasónica < 30 HACER
+            GIRAR a la derecha lentamente
+            ESPERAR T_CORREC segundos
+            ACTUALIZAR distancia ultrasónica
+        DETENER motores
+
+        # Caso 2: Alinear usando el sensor infrarrojo
+        MIENTRAS distancia_anterior - distancia_actual > 0 HACER
+            GIRAR suavemente hacia la derecha
+            ESPERAR 0.1 segundos
+            ACTUALIZAR distancia_anterior ← distancia_actual
+            LEER nueva distancia_actual desde infrarrojo
+            MOSTRAR valores actuales
+
+        # Caso 3: Seguir borde mientras no haya obstáculo al frente y esté cerca del borde
+        MIENTRAS distancia_infrarroja < 20 Y distancia_ultrasonica > 5 HACER
+            MOSTRAR "Siguiendo borde..."
+
+            SI demasiado cerca del borde ENTONCES
+                GIRAR un poco a la derecha
+            SINO SI demasiado lejos del borde ENTONCES
+                GIRAR un poco a la izquierda
+            SINO
+                AVANZAR recto
+
+            ACTUALIZAR distancias (ultrasónico e infrarrojo)
+
+        # Caso 4: Buscar nuevo borde (girar suavemente)
+        MIENTRAS distancia_infrarroja > 6 Y distancia_ultrasonica > 5 HACER
+            GIRAR ligeramente a la izquierda
+            LEER distancias
+            MOSTRAR "Girando a izquierda..."
+
+        DETENER motores
+
+    SI estado = GOAL_REACHED ENTONCES
+        DETENER motores
+        MOSTRAR "Objetivo alcanzado"
+        SALIR del bucle
+
+    #MANEJAR interrupción por teclado:
+        DETENER motores
+
+    MOSTRAR "Navegación finalizada"
+    FIN
+
 En el siguiente video esta la demostración de la solución del laberinto 
 <p align="center">
 <a href="https://youtu.be/yiLoG67B8KI">
