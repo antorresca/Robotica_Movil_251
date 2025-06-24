@@ -69,6 +69,30 @@ La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referenc
 
 ### 2.2. 🏎️↪️🧱 Misión 1: Evite los obstáculos
 Para la primera misión se implementó un algoritmo bug 2 con python mediante conexion SSH al robot lego EV3 .
+En el siguiente diagrama de flujo se plantea el algorítmo de navegación:
+
+```mermaid
+  flowchart TD
+        A(["Inicio"])
+        A --> B["Configurar sensores"]
+        B --> C["Configurar motores"]
+        C --> D["Configurar distancias"]
+        D --> E["Define estados"]
+        E --> F{"Estado == 0?"}
+        F -- Sí --> G[Seguir línea]
+        F -- No --> H{"Estado == 1?"}
+        H -- Sí --> I[Rodear obstáculo]
+        H -- No --> J{"Estado == 2?"}
+        J -- Sí --> K["OBJETIVO LOGRADO"]
+        J -- No --> F
+        I --> L{"Color de línea negro?"}
+        L -- Sí --> G
+        L -- No --> I
+        K --> Z[FIN]
+        G --> M{"Línea == Rojo?"}
+        M -- No --> G
+        M -- Sí --> Z
+```
 El funcionamiento es el siguiente :
 
     INICIO
