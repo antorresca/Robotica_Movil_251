@@ -76,7 +76,14 @@ Para la primera misión se implemento un algoritmo bug 2 con python mediante con
 ### 2.3. 🏎️🔀🏁 Misión 2: Supere el laberinto
 Para el desarrolo del algoritmo maze se implementaron dos tecnicas de programación :
 
-La primer tecnica fue un seguidor de pared izquierda programado mediante la programación de bloques EV3, la cual es la siguiente.
+La primer tecnica fue un seguidor de pared izquierda programado mediante la programación de bloques EV3, con la siguiente configuracion de sensores.
+
+<p >
+  <img src="https://github.com/user-attachments/assets/ee37729e-7bc3-46e4-8fc6-b93e06b5e462" width="300"/>
+  <img src="https://github.com/user-attachments/assets/4da064d3-cf5d-4f1f-a616-ca8a3c25dbb2" width="300"/>
+</p>
+
+La programacion de los sensores y del robot se detalla a continuacion.
 Iniciamos determinando los motores del robot y llevando a 0 los valores de los sensores de giro y de motores, además declaramos una variable para la distancia máxima del muro.
 <div style="display: flex; justify-content: center; gap: 10px;" align="center">
 <img src="https://github.com/user-attachments/assets/c19e08f2-8c26-444b-8e37-66641ea77d77" width="500"  title="inicio">
