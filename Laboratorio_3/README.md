@@ -121,7 +121,11 @@ La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV
 </p>
 
 En el siguiente video esta la demostración de la solución del laberinto 
-
+<p align="center">
+<a href="https://youtu.be/yiLoG67B8KI">
+<img src="https://img.youtube.com/vi/yiLoG67B8KI/0.jpg" alt="<Texto_altenterno>" width="<Algoritmo Bug 2>">
+</a>
+</p>
 
 
 ## 📖Referencias
