@@ -122,9 +122,7 @@ La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV
 
 En el siguiente video esta la demostración de la solución del laberinto 
 
-<div align="center">Add commentMore actions
-  <video src="https://github.com/user-attachments/assets/b3cf9e77-22b0-431d-8fb4-1d50ca97d32f" />
-</div>
+
 
 ## 📖Referencias
 
