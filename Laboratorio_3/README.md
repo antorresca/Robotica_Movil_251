@@ -70,7 +70,9 @@ La funcion de costo , esta compuesta por f(n)=g(n)+h(n) donde g(n) hace referenc
 ### 2.2. 🏎️↪️🧱 Misión 1: Evite los obstáculos
 Para la primera misión se implemento un algoritmo bug 2 con python mediante conexion SSH al robot lego EV3
 
-
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/0f4b8e7e-829b-46dd-acc9-d15be1c27d49" />
+</div>
 
 
 ### 2.3. 🏎️🔀🏁 Misión 2: Supere el laberinto
@@ -78,7 +80,7 @@ Para el desarrolo del algoritmo maze se implementaron dos tecnicas de programaci
 
 La primer tecnica fue un seguidor de pared izquierda programado mediante la programación de bloques EV3, con la siguiente configuracion de sensores.
 
-<p >
+<p align="center">
   <img src="https://github.com/user-attachments/assets/ee37729e-7bc3-46e4-8fc6-b93e06b5e462" width="300"/>
   <img src="https://github.com/user-attachments/assets/4da064d3-cf5d-4f1f-a616-ca8a3c25dbb2" width="300"/>
 </p>
@@ -118,7 +120,9 @@ La segunda tecnica fue el uso de python utilizando la conexión SSH del robot EV
 
 En el siguiente video esta la demostración de la solución del laberinto 
 
-
+<div align="center">Add commentMore actions
+  <video src="https://github.com/user-attachments/assets/b3cf9e77-22b0-431d-8fb4-1d50ca97d32f" />
+</div>
 
 ## 📖Referencias
 
